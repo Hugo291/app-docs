@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DashFit — Politique de confidentialité</title>
+<style>
+  :root { --ink: #2A2320; --paper: #FBF7F4; --mute: #666666; --faint: #EADFD8; --accent: #FF6B35; }
+  * { box-sizing: border-box; }
+  body { background: var(--paper); color: var(--ink); font-family: -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; max-width: 720px; margin: 48px auto; padding: 0 24px 80px; line-height: 1.6; }
+  h1 { font-weight: 600; letter-spacing: -0.5px; margin-bottom: 4px; font-size: 32px; color: var(--accent); }
+  .meta { color: var(--mute); font-size: 14px; margin-bottom: 40px; }
+  h2 { font-weight: 600; letter-spacing: -0.3px; margin: 36px 0 8px; font-size: 20px; }
+  p, li { color: var(--ink); font-size: 16px; }
+  a { color: var(--accent); }
+  hr { border: none; border-top: 1px solid var(--faint); margin: 48px 0; }
+  .footer { color: var(--mute); font-size: 13px; font-style: italic; }
+</style>
+</head>
+<body>
+
+<h1>DashFit — Politique de confidentialité</h1>
+<p class="meta">Dernière mise à jour : 18 juillet 2026 · Version 1.0</p>
+
+<h2>Quelles données l'application utilise</h2>
+<p>
+  <strong>DashFit est un copilote de course à pied.</strong> Pour analyser vos séances,
+  l'application lit vos données de santé depuis <strong>Health Connect</strong>, le
+  service de santé d'Android : séances d'exercice, fréquence cardiaque, variabilité de
+  la fréquence cardiaque (HRV), distance, vitesse, pas, calories actives, sommeil,
+  VO2max et historique de santé. Ces données sont enregistrées exclusivement sur votre
+  appareil, dans le stockage local de l'application (base de données <strong>Room</strong>
+  et préférences <strong>DataStore</strong>). DashFit ne demande ni votre nom, ni votre
+  adresse, ni votre numéro de téléphone.
+</p>
+
+<h2>Aucun serveur DashFit</h2>
+<p>
+  <strong>Il n'existe aucun serveur DashFit.</strong> L'éditeur ne dispose d'aucun
+  backend, d'aucune base de données distante et d'aucun espace de stockage en ligne :
+  vos données de santé ne transitent donc par <em>aucun</em> serveur nous appartenant, et
+  nous n'y avons jamais accès. Tous les calculs (allure, splits par kilomètre, zones de
+  fréquence cardiaque, score de fraîcheur) s'exécutent <strong>directement sur votre
+  appareil</strong>. La seule donnée qui quitte votre téléphone part vers votre propre
+  agenda Google, comme décrit ci-dessous.
+</p>
+
+<h2>Synchronisation Google Agenda : sortant uniquement, vers votre propre agenda</h2>
+<p>
+  DashFit écrit le résumé de vos courses dans un agenda nommé
+  <strong>« Running »</strong> qui vous appartient, via l'<strong>API Google
+  Calendar</strong> et une autorisation <strong>OAuth 2.0</strong> que vous accordez
+  vous-même. C'est la seule transmission de données effectuée par l'application.
+</p>
+<ul>
+  <li><strong>Destination unique</strong> : le compte Google que <em>vous</em> avez
+  connecté. Aucun tiers, aucun intermédiaire, aucun autre destinataire.</li>
+  <li><strong>Contenu transmis</strong> : un résumé de course — date, durée, distance,
+  allure, splits par kilomètre, fréquence cardiaque moyenne et maximale, temps passé par
+  zone cardiaque, calories.</li>
+  <li><strong>Ni HRV, ni sommeil, ni VO2max, ni historique de santé brut</strong> ne sont
+  écrits dans l'agenda : ces données servent uniquement aux calculs locaux.</li>
+  <li>Vous pouvez révoquer cet accès à tout moment depuis les réglages de votre compte
+  Google, ou vous déconnecter depuis les Réglages de l'application.</li>
+</ul>
+
+<h2>Health Connect : lecture seule, avec votre autorisation</h2>
+<p>
+  L'application demande dix permissions Health Connect, toutes en
+  <strong>lecture seule</strong> (<strong>READ</strong>) : séances d'exercice, fréquence
+  cardiaque, variabilité de la fréquence cardiaque, distance, vitesse, pas, calories
+  actives, sommeil, VO2max et historique de santé
+  (<strong>READ_HEALTH_DATA_HISTORY</strong>, qui permet de lire vos séances antérieures à
+  l'installation).
+</p>
+<ul>
+  <li>DashFit <strong>n'écrit jamais</strong> dans Health Connect et ne modifie aucune de
+  vos données de santé.</li>
+  <li>Ces permissions se refusent et se révoquent à tout moment depuis les réglages
+  Health Connect de votre téléphone.</li>
+  <li>Les données lues sont copiées <strong>uniquement dans la base locale</strong> de
+  l'application.</li>
+</ul>
+
+<h2>Internet : uniquement pour votre agenda Google</h2>
+<p>
+  Les permissions <strong>Internet</strong> et <strong>état du réseau</strong> servent
+  exclusivement à l'authentification Google et à la synchronisation avec votre agenda
+  décrite ci-dessus. Elles ne sont utilisées pour rien d'autre : pas de télémétrie, pas
+  de publicité, pas de remontée de vos données vers un tiers. Le reste de l'application
+  fonctionne hors-ligne.
+</p>
+
+<h2>Localisation approximative : contexte uniquement</h2>
+<p>
+  L'application peut demander la permission de <strong>localisation approximative</strong>
+  (<strong>ACCESS_COARSE_LOCATION</strong>) dans un seul but : afficher le contexte
+  météorologique de vos courses. Cette permission est facultative — l'application
+  fonctionne sans. Votre position n'est ni enregistrée dans un historique, ni transmise à
+  l'éditeur, ni écrite dans votre agenda.
+</p>
+
+<h2>Notifications</h2>
+<p>
+  La permission <strong>notifications</strong> sert uniquement à vous informer de l'état
+  d'une synchronisation lancée en arrière-plan. Aucune notification publicitaire ou
+  promotionnelle n'est envoyée.
+</p>
+
+<h2>Un compte Google est nécessaire</h2>
+<p>
+  Contrairement à nos autres applications, DashFit <strong>requiert la connexion à un
+  compte Google</strong> : c'est indispensable pour écrire vos courses dans votre agenda.
+  La connexion passe par le <strong>Credential Manager</strong> d'Android puis par une
+  autorisation OAuth 2.0 limitée au <strong>périmètre Google Calendar</strong>.
+  L'application reçoit un jeton d'accès temporaire ; elle ne voit jamais votre mot de
+  passe et n'en conserve aucune copie. Aucun compte n'est créé chez l'éditeur : nous ne
+  détenons aucun fichier client.
+</p>
+
+<h2>Aucune publicité, aucun tracking</h2>
+<p>
+  L'application ne contient aucune publicité, aucun SDK de tracking publicitaire,
+  aucun identifiant publicitaire (Advertising ID), aucun analytics (Google Analytics,
+  Firebase Analytics, Mixpanel, etc.), ni aucun outil de mesure du comportement
+  utilisateur. Vos données de santé ne sont jamais vendues, louées ni partagées à des
+  fins commerciales — ni à quiconque, en réalité.
+</p>
+
+<h2>Stockage local des données</h2>
+<p>
+  Vos séances, échantillons de fréquence cardiaque, splits par kilomètre, objectifs et
+  réglages sont enregistrés localement sur votre appareil par l'application (application
+  Android native en Kotlin, base de données locale <strong>Room</strong>, préférences
+  <strong>DataStore</strong>). Ces données restent sur votre téléphone, à l'exception du
+  résumé de course envoyé vers votre agenda Google.
+</p>
+
+<h2>Suppression de vos données</h2>
+<p>
+  Vous gardez le contrôle total de vos données. Désinstaller l'application supprime
+  définitivement toutes les données qu'elle a stockées sur votre appareil. Vous pouvez
+  également révoquer les permissions Health Connect depuis les réglages de votre
+  téléphone, retirer l'accès de DashFit depuis les paramètres de sécurité de votre compte
+  Google, et supprimer à tout moment les événements créés dans votre agenda « Running »
+  directement depuis Google Agenda.
+</p>
+
+<h2>Âge minimum</h2>
+<p>
+  DashFit s'adresse aux personnes de <strong>18 ans et plus</strong>. L'application n'est
+  pas destinée aux enfants et ne collecte sciemment aucune donnée les concernant.
+</p>
+
+<h2>Modifications de cette politique</h2>
+<p>
+  Cette politique peut être mise à jour en cas d'évolution majeure de l'application.
+  La date de dernière mise à jour est indiquée en haut de cette page.
+</p>
+
+<h2>Contact</h2>
+<p>
+  Éditeur : PIXELMORE. Pour toute question concernant cette politique de
+  confidentialité :
+  <a href="mailto:hugoferreirapro803@gmail.com">hugoferreirapro803@gmail.com</a>
+</p>
+
+<hr>
+
+<p class="footer">
+  DashFit — un copilote de course à pied qui analyse vos séances en local et écrit vos
+  résumés dans votre propre agenda Google. Pas de serveur. Pas de publicité. Pas de
+  tracking.
+</p>
+
+</body>
+</html>
