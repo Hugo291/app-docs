@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verba — Politique de confidentialité</title>
+<style>
+  :root { --ink: #23204F; --paper: #FAF4EA; --mute: #6E6A63; --faint: #E4DFD4; --accent: #332E7C; }
+  * { box-sizing: border-box; }
+  body { background: var(--paper); color: var(--ink); font-family: -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; max-width: 720px; margin: 48px auto; padding: 0 24px 80px; line-height: 1.6; }
+  h1 { font-weight: 600; letter-spacing: -0.5px; margin-bottom: 4px; font-size: 32px; color: var(--accent); }
+  .meta { color: var(--mute); font-size: 14px; margin-bottom: 40px; }
+  h2 { font-weight: 600; letter-spacing: -0.3px; margin: 36px 0 8px; font-size: 20px; }
+  p, li { color: var(--ink); font-size: 16px; }
+  a { color: var(--accent); }
+  hr { border: none; border-top: 1px solid var(--faint); margin: 48px 0; }
+  .footer { color: var(--mute); font-size: 13px; font-style: italic; }
+</style>
+</head>
+<body>
+
+<h1>Verba — Politique de confidentialité</h1>
+<p class="meta">Dernière mise à jour : 7 août 2026 · Version 1.0</p>
+
+<h2>En résumé</h2>
+<p>
+  Verba est une application d'apprentissage de l'anglais. Elle fonctionne sans compte :
+  votre progression, vos réponses et vos statistiques restent sur votre appareil. Deux
+  choses seulement quittent le téléphone : les informations de votre compte Google si
+  vous choisissez de vous connecter, et des mesures d'usage anonymes. Rien n'est vendu
+  ni partagé avec des annonceurs.
+</p>
+
+<h2>Ce qui reste sur votre appareil</h2>
+<p>
+  L'essentiel de vos données ne sort jamais du téléphone. Elles sont enregistrées dans
+  la base de données locale de l'application (Room, sur Android) :
+</p>
+<ul>
+  <li>vos <strong>réponses aux quiz</strong> et les mots que vous avez manqués ;</li>
+  <li>votre <strong>progression</strong> : points, précision, série de jours, mots maîtrisés ;</li>
+  <li>le <strong>dictionnaire</strong> et les <strong>articles</strong> téléchargés, pour un usage hors connexion ;</li>
+  <li>vos <strong>réglages</strong> : prénom, objectif quotidien, sons, minuteur, rappel.</li>
+</ul>
+<p>
+  Ces données ne sont transmises à personne. Désinstaller l'application les efface
+  définitivement.
+</p>
+
+<h2>Connexion Google — facultative</h2>
+<p>
+  Verba propose de se connecter avec un compte Google. C'est un choix, jamais une
+  obligation : l'application entière fonctionne sans. Si vous vous connectez, nous
+  recevons de Google, via Firebase Authentication, votre <strong>nom d'affichage</strong>,
+  votre <strong>adresse e-mail</strong> et un <strong>identifiant de compte</strong>.
+  Ces informations servent uniquement à afficher votre compte dans les réglages et à
+  vous reconnaître d'un appareil à l'autre. Nous n'y associons aucun profil publicitaire.
+</p>
+<p>
+  Vous pouvez vous déconnecter à tout moment depuis Réglages → Compte. Pour faire
+  supprimer le compte et les informations associées, écrivez-nous à l'adresse indiquée
+  plus bas ; la suppression intervient sous trente jours.
+</p>
+
+<h2>Mesure d'usage</h2>
+<p>
+  L'application utilise <strong>Firebase Analytics</strong> (Google) pour comprendre
+  comment Verba est utilisé : écrans consultés, quiz lancés, fréquence d'ouverture. Ces
+  mesures sont rattachées à un identifiant d'installation, pas à votre identité. Elles
+  nous servent à décider quoi améliorer. Elles ne sont ni revendues, ni utilisées pour
+  du ciblage publicitaire.
+</p>
+
+<h2>Contenu téléchargé</h2>
+<p>
+  Le dictionnaire et les articles du mode Lecture sont récupérés depuis
+  <strong>Cloud Firestore</strong> (Google). Ce sont des lectures : l'application
+  télécharge du contenu, elle n'y envoie rien vous concernant. Les articles proviennent
+  de sources publiques (agences de presse, Wikipédia) et sont cités avec leur origine.
+</p>
+
+<h2>Aucune publicité, aucun identifiant publicitaire</h2>
+<p>
+  Verba ne contient aucune publicité, aucun SDK publicitaire, et n'utilise pas
+  l'identifiant publicitaire Android (Advertising ID).
+</p>
+
+<h2>Sécurité</h2>
+<p>
+  Les échanges avec les services Google sont chiffrés en transit (HTTPS/TLS). Les
+  données locales bénéficient du chiffrement de l'appareil.
+</p>
+
+<h2>Permissions Android</h2>
+<ul>
+  <li><strong>Internet</strong> : télécharger le dictionnaire et les articles, et
+  gérer la connexion Google.</li>
+  <li><strong>Notifications</strong> : uniquement pour le rappel quotidien, que vous
+  activez ou désactivez dans les réglages.</li>
+</ul>
+
+<h2>Vos droits</h2>
+<p>
+  Conformément au RGPD, vous pouvez demander l'accès, la rectification ou la
+  suppression des informations vous concernant, ainsi que vous opposer à la mesure
+  d'usage. Une seule adresse pour tout cela, indiquée ci-dessous.
+</p>
+
+<h2>Enfants</h2>
+<p>
+  Verba s'adresse aux personnes de 13 ans et plus. L'application propose des articles
+  de presse réels dont le contenu n'est pas filtré, et n'est donc pas destinée aux
+  jeunes enfants. Nous ne collectons pas sciemment de données concernant un enfant de
+  moins de 13 ans ; si cela devait arriver, écrivez-nous et nous les supprimerons.
+</p>
+
+<h2>Modifications de cette politique</h2>
+<p>
+  Cette politique peut être mise à jour en cas d'évolution majeure de l'application.
+  La date de dernière mise à jour est indiquée en haut de cette page.
+</p>
+
+<h2>Contact</h2>
+<p>
+  Éditeur : Hugo Ferreira. Application : Verba (com.hfc.verba). Pour toute question
+  concernant cette politique de confidentialité, ou pour demander la suppression de vos
+  données :
+  <a href="mailto:hugoferreirapro803@gmail.com">hugoferreirapro803@gmail.com</a>
+</p>
+
+<hr>
+
+<p class="footer">
+  Verba — apprendre l'anglais dix mots à la fois, et lire de vrais articles sans se
+  décourager. Pas de publicité. Pas de compte obligatoire. Votre progression reste
+  chez vous.
+</p>
+
+</body>
+</html>
