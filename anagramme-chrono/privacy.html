@@ -20,33 +20,131 @@
 <body>
 
 <h1>Anagramme chrono — Politique de confidentialité</h1>
-<p class="meta">Dernière mise à jour : 9 août 2026 · Version 1.0</p>
+<p class="meta">Dernière mise à jour : 11 août 2026 · Version 1.1</p>
 
-<h2>Aucune collecte de données</h2>
+<h2>En résumé</h2>
 <p>
-  <strong>Anagramme chrono ne collecte aucune donnée personnelle.</strong> L'application
-  est un jeu de lettres qui fonctionne entièrement hors ligne, sans compte et sans
-  inscription. Votre pseudonyme (choisi par vous, jamais vérifié ni transmis), votre
-  progression (indices restants, points et palier de ligue, historique de vos duels) et
-  vos réglages (sons, vibrations, mode daltonien, effets de chrono, langue) sont stockés
-  exclusivement sur votre appareil, dans l'espace privé de l'application.
+  Anagramme chrono est un jeu de lettres qui comporte <strong>deux modes</strong>, et le
+  traitement de vos données dépend entièrement de celui que vous jouez. La
+  <strong>campagne</strong> est hors ligne : rien ne quitte votre appareil, aucun compte
+  n'existe. Le <strong>duel en ligne</strong>, lui, envoie une manche que vous venez de
+  jouer pour qu'un autre joueur la relève : cela suppose un compte anonyme et l'envoi de
+  quelques données de jeu, décrites en détail plus bas. Il n'y a ni publicité, ni traceur,
+  ni achat intégré, et rien n'est vendu ni partagé avec des annonceurs.
 </p>
 
-<h2>Aucune donnée envoyée vers des serveurs</h2>
+<h2>Deux modes, deux régimes de données</h2>
+<ul>
+  <li><strong>Campagne (hors ligne)</strong> — progression par niveaux contre un
+  adversaire calculé sur votre appareil. Aucun compte, aucune connexion réseau, aucune
+  donnée transmise. Un joueur qui n'ouvre jamais l'écran de duel en ligne
+  <strong>n'a jamais de compte</strong> et ne transmet jamais rien.</li>
+  <li><strong>Duel en ligne (facultatif)</strong> — vous publiez une manche jouée, un
+  autre joueur reçoit le même tirage et vous voit progresser seconde par seconde. C'est
+  ce mode, et lui seul, qui crée un compte anonyme et envoie des données.</li>
+</ul>
 <p>
-  L'application ne transmet aucune donnée, ni à nous ni à des tiers. Il n'y a aucun
-  compte, aucun cloud, aucune synchronisation. L'adversaire de vos duels est un
-  <strong>bot local</strong>, calculé sur votre appareil : aucun échange n'a lieu avec un
-  autre joueur ni avec un serveur. Le dictionnaire français (85 535 mots) est embarqué
-  dans l'application : aucune connexion réseau n'est nécessaire pour jouer, et
-  l'application n'en ouvre aucune.
+  Le mode en ligne est un ajout, jamais un péage : l'application reste entièrement
+  jouable hors ligne et sans compte.
+</p>
+
+<h2>Ce qui reste sur votre appareil</h2>
+<p>
+  L'essentiel de vos données ne sort jamais du téléphone. Elles sont enregistrées dans
+  l'espace privé de l'application (<em>shared_preferences</em>, sur Android) :
+</p>
+<ul>
+  <li>votre <strong>pseudonyme</strong>, choisi par vous (« Nino » par défaut) ;</li>
+  <li>votre <strong>progression</strong> : niveaux de campagne et records, indices
+  restants, points et palier de ligue, série de victoires, historique de vos duels,
+  meilleur mot trouvé ;</li>
+  <li>les <strong>tirages déjà vus</strong>, pour ne jamais vous reservir les mêmes
+  lettres ;</li>
+  <li>vos <strong>réglages</strong> : sons, vibrations, mode daltonien, effets de chrono,
+  langue.</li>
+</ul>
+<p>
+  Le dictionnaire français (85 535 mots) est embarqué dans l'application : jouer la
+  campagne ne demande aucune connexion.
+</p>
+
+<h2>Le compte anonyme du duel en ligne</h2>
+<p>
+  Ouvrir l'écran de duel en ligne crée un <strong>compte anonyme</strong> via Firebase
+  Authentication (Google). « Anonyme » au sens technique du terme : il ne s'agit pas de
+  vous connecter à un compte existant. L'application ne demande
+  <strong>ni nom, ni adresse e-mail, ni mot de passe, ni numéro de téléphone</strong>, et
+  ne vous fait pas vous connecter à votre compte Google. Ce compte est un identifiant
+  aléatoire, propre à votre installation, qui sert uniquement à savoir quelle manche est
+  la vôtre et à vous éviter de vous défier vous-même.
+</p>
+<p>
+  Cette connexion est <strong>paresseuse</strong> : elle n'a lieu qu'en ouvrant cet écran.
+  Tant que vous ne l'ouvrez pas, aucun compte n'est créé.
+</p>
+
+<h2>Ce qui est transmis quand vous jouez en ligne</h2>
+<p>
+  Quand vous publiez une manche, ou quand vous répondez à celle d'un autre joueur,
+  l'application envoie exactement ceci :
+</p>
+<ul>
+  <li>votre <strong>identifiant anonyme</strong> ;</li>
+  <li>votre <strong>pseudonyme</strong>, tel que vous l'avez choisi dans l'application ;</li>
+  <li>le <strong>score</strong> de la manche ;</li>
+  <li>les <strong>lettres du tirage</strong> et le mot du dictionnaire dont elles
+  proviennent, pour que votre adversaire affronte exactement la même grille ;</li>
+  <li>la <strong>liste horodatée des mots que vous avez trouvés</strong> — chaque mot,
+  ses points, et la seconde de la manche où vous l'avez posé. C'est ce qui permet à votre
+  adversaire de vous voir jouer en direct alors que vous avez joué la veille. Les secondes
+  sont comptées depuis le début de la manche, jamais des heures réelles ;</li>
+  <li>la <strong>langue</strong> du tirage et la date d'envoi.</li>
+</ul>
+<p>
+  Rien d'autre. Aucune donnée de contact, aucune localisation, aucun identifiant
+  d'appareil, aucun contenu écrit librement : les mots transmis sont des mots du
+  dictionnaire français que vous avez formés avec les lettres du tirage.
+  <strong>Une manche abandonnée n'est jamais publiée.</strong>
+</p>
+<p>
+  Votre pseudonyme est visible par les joueurs qui relèvent votre manche. Il est libre :
+  nous vous recommandons de ne pas y mettre votre nom réel ni aucune information
+  permettant de vous identifier.
+</p>
+
+<h2>Où ces données sont hébergées</h2>
+<p>
+  Les manches partagées sont stockées dans <strong>Cloud Firestore</strong> (Google), dans
+  le projet <code>anagramme-chrono</code>, en région <strong>eur3 — Europe</strong>. Ce
+  choix est irréversible et volontaire : <strong>les données restent en Europe</strong>.
+  Google agit ici comme hébergeur pour notre compte. Les échanges sont chiffrés en
+  transit (HTTPS/TLS).
+</p>
+
+<h2>Durée de conservation et suppression</h2>
+<p>
+  Soyons précis, car c'est un point important : <strong>une manche publiée est
+  définitive</strong>. Les règles de sécurité de la base interdisent toute modification et
+  toute suppression depuis l'application. Vous ne pouvez donc pas supprimer vous-même,
+  depuis le jeu, une manche que vous avez publiée. C'est un choix de conception — un duel
+  ne peut pas être réécrit après coup — mais il doit être dit clairement.
+</p>
+<p>
+  Les manches sont conservées sans durée prédéfinie, afin de rester disponibles pour les
+  joueurs qui les relèveront. <strong>Pour faire supprimer vos manches publiées et
+  l'identifiant anonyme qui leur est rattaché, écrivez-nous à l'adresse de contact
+  indiquée plus bas</strong> : la suppression est effectuée manuellement, sous trente
+  jours. Les données locales, elles, s'effacent à tout moment depuis les réglages Android
+  de l'application, ou en la désinstallant.
 </p>
 
 <h2>Aucune publicité, aucun traceur</h2>
 <p>
-  Anagramme chrono n'affiche aucune publicité. L'application ne contient aucun outil de
-  mesure d'audience, aucun outil d'analyse, aucun rapport de plantage, et ne lit jamais
-  l'identifiant publicitaire de votre appareil. Aucune permission Android n'est demandée.
+  Anagramme chrono n'affiche aucune publicité. L'application ne contient aucun SDK
+  publicitaire, aucun outil de mesure d'audience ou d'analyse (ni Google Analytics, ni
+  Firebase Analytics, ni équivalent), aucun rapport de plantage, et ne lit jamais
+  l'identifiant publicitaire Android (Advertising ID). Aucune donnée n'est vendue, louée
+  ni transmise à des annonceurs ou à des courtiers en données.
 </p>
 
 <h2>Aucun achat intégré</h2>
@@ -56,39 +154,68 @@
   n'est demandé, et l'application n'a accès à aucune donnée bancaire.
 </p>
 
-<h2>Enfants</h2>
+<h2>Permissions Android</h2>
+<ul>
+  <li><strong>Internet</strong> (<code>INTERNET</code>) — publier et recevoir les manches
+  du duel en ligne.</li>
+  <li><strong>État du réseau</strong> (<code>ACCESS_NETWORK_STATE</code>) — savoir si une
+  connexion est disponible, pour dire honnêtement « hors ligne » plutôt que d'attendre
+  dans le vide.</li>
+  <li><strong>Services Google</strong> (<code>READ_GSERVICES</code>) — requise par les
+  bibliothèques Google utilisées pour joindre la base de données.</li>
+</ul>
 <p>
-  Anagramme chrono convient à tous les publics, y compris aux enfants. Comme aucune
-  donnée n'est collectée, aucune donnée d'enfant ne l'est non plus : l'application ne
-  demande ni nom réel, ni âge, ni adresse e-mail, ni localisation, ni contacts, ni accès
-  à l'appareil photo ou au microphone. Elle ne contient ni publicité, ni messagerie, ni
-  fonction sociale, ni contenu généré par d'autres utilisateurs, et ne permet aucune
-  communication entre joueurs — l'adversaire est un programme, pas une personne.
+  Aucune autre permission n'est demandée : ni caméra, ni microphone, ni localisation, ni
+  contacts, ni stockage, ni notifications.
 </p>
 
 <h2>Vos droits</h2>
 <p>
-  Aucune donnée personnelle n'étant collectée ni conservée en dehors de votre appareil,
-  il n'y a rien à consulter, corriger, exporter ou supprimer auprès de nous. Vous gardez
-  la maîtrise complète des données locales : elles s'effacent depuis les réglages Android
-  de l'application, ou en la désinstallant.
+  Conformément au RGPD, vous pouvez demander l'accès aux informations vous concernant,
+  leur rectification, leur suppression, ou vous opposer à leur traitement. Le traitement
+  lié au duel en ligne repose sur l'exécution du service que vous demandez : il ne se
+  déclenche qu'à partir du moment où vous ouvrez ce mode et publiez une manche. Une seule
+  adresse pour toutes ces demandes, indiquée ci-dessous. Comme l'identifiant est anonyme,
+  précisez dans votre message le pseudonyme utilisé et la date approximative des manches
+  concernées, faute de quoi nous ne pourrons pas les retrouver.
 </p>
 
-<h2>Modifications</h2>
+<h2>Enfants</h2>
 <p>
-  Toute évolution de cette politique sera publiée à cette adresse, avec une nouvelle date
-  de mise à jour. Si une version future d'Anagramme chrono devait collecter des données,
-  cette page serait mise à jour avant la publication de cette version.
+  Anagramme chrono convient à tous les publics, enfants compris, et le jeu ne demande
+  <strong>ni nom réel, ni âge, ni adresse e-mail, ni localisation, ni contacts</strong>, et
+  aucun accès à la caméra ou au microphone.
+</p>
+<p>
+  Le mode en ligne mérite cependant d'être décrit sans détour : il crée un identifiant
+  anonyme et fait circuler du contenu produit par les joueurs — le pseudonyme et les mots
+  trouvés. Ce contenu est strictement encadré : <strong>il n'existe aucune messagerie,
+  aucun échange de texte libre entre joueurs, aucun profil public, aucune photo et aucun
+  moyen de contacter un autre joueur</strong>. Les mots échangés sont des mots du
+  dictionnaire français, formés avec les lettres du tirage. Le seul champ libre de
+  l'application est le pseudonyme, que le joueur choisit lui-même ; nous recommandons aux
+  parents de vérifier qu'il ne contient pas le nom réel de l'enfant. La campagne, jouable
+  seule et hors ligne, ne transmet rien du tout.
+</p>
+
+<h2>Modifications de cette politique</h2>
+<p>
+  Toute évolution de cette politique est publiée à cette adresse, avec une nouvelle date
+  de mise à jour. Cette version 1.1 remplace la version 1.0 du 9 août 2026, qui décrivait
+  une application entièrement hors ligne : elle n'est plus exacte depuis l'ajout du duel
+  en ligne, et c'est la raison de cette mise à jour.
 </p>
 
 <h2>Contact</h2>
 <p>
-  Pour toute question relative à cette politique :
+  Éditeur : Hugo Ferreira. Application : Anagramme chrono
+  (<code>com.hfc.anagramme_chrono</code>). Pour toute question concernant cette politique,
+  ou pour demander la suppression de vos données :
   <a href="mailto:hugoferreirapro803@gmail.com">hugoferreirapro803@gmail.com</a>
 </p>
 
 <hr>
-<p class="footer">Anagramme chrono — jeu de lettres hors ligne. Développé par Hugo Ferreira.</p>
+<p class="footer">Anagramme chrono — jeu de lettres jouable hors ligne, avec un duel en ligne facultatif. Développé par Hugo Ferreira.</p>
 
 </body>
 </html>

@@ -20,32 +20,125 @@
 <body>
 
 <h1>Anagramme chrono — Privacy Policy</h1>
-<p class="meta">Last updated: 9 August 2026 · Version 1.0</p>
+<p class="meta">Last updated: 11 August 2026 · Version 1.1</p>
 
-<h2>No data collection</h2>
+<h2>In short</h2>
 <p>
-  <strong>Anagramme chrono does not collect any personal data.</strong> The app is a word
-  game that runs entirely offline, with no account and no sign-up. Your nickname (chosen
-  by you, never verified nor transmitted), your progress (remaining hints, league points
-  and tier, your duel history) and your settings (sounds, vibration, colour-blind mode,
-  timer effects, language) are stored exclusively on your device, in the app's private
-  storage.
+  Anagramme chrono is a word game with <strong>two modes</strong>, and how your data is
+  handled depends entirely on which one you play. The <strong>campaign</strong> is offline:
+  nothing leaves your device, no account exists. The <strong>online duel</strong> publishes
+  a round you have just played so that another player can take it on: this requires an
+  anonymous account and sends a small set of game data, described in detail below. There
+  is no advertising, no tracker and no in-app purchase, and nothing is sold or shared with
+  advertisers.
 </p>
 
-<h2>No data sent to any server</h2>
+<h2>Two modes, two data regimes</h2>
+<ul>
+  <li><strong>Campaign (offline)</strong> — level-by-level progress against an opponent
+  computed on your own device. No account, no network connection, no data transmitted. A
+  player who never opens the online duel screen <strong>never has an account</strong> and
+  never transmits anything.</li>
+  <li><strong>Online duel (optional)</strong> — you publish a round you have played,
+  another player receives the same letters and watches your score climb second by second.
+  This mode, and only this mode, creates an anonymous account and sends data.</li>
+</ul>
 <p>
-  The app transmits no data, neither to us nor to third parties. There is no account, no
-  cloud, no synchronisation. Your duel opponent is a <strong>local bot</strong>, computed
-  on your own device: nothing is exchanged with another player or with a server. The
-  French dictionary (85,535 words) is bundled inside the app: no network connection is
-  required to play, and the app opens none.
+  The online mode is an addition, never a toll gate: the app remains fully playable
+  offline and without an account.
+</p>
+
+<h2>What stays on your device</h2>
+<p>
+  Most of your data never leaves the phone. It is stored in the app's private storage
+  (<em>shared_preferences</em>, on Android):
+</p>
+<ul>
+  <li>your <strong>nickname</strong>, chosen by you ("Nino" by default);</li>
+  <li>your <strong>progress</strong>: campaign levels and records, remaining hints, league
+  points and tier, winning streak, your duel history, best word found;</li>
+  <li>the <strong>letter draws you have already seen</strong>, so the same letters are
+  never served to you twice;</li>
+  <li>your <strong>settings</strong>: sounds, vibration, colour-blind mode, timer effects,
+  language.</li>
+</ul>
+<p>
+  The French dictionary (85,535 words) is bundled inside the app: playing the campaign
+  requires no connection at all.
+</p>
+
+<h2>The anonymous account used for online duels</h2>
+<p>
+  Opening the online duel screen creates an <strong>anonymous account</strong> through
+  Firebase Authentication (Google). "Anonymous" in the technical sense: it does not sign
+  you in to any existing account. The app asks for <strong>no name, no email address, no
+  password and no phone number</strong>, and does not connect to your Google account. This
+  account is a random identifier, specific to your installation, used only to know which
+  round is yours and to avoid pitting you against yourself.
+</p>
+<p>
+  The connection is <strong>lazy</strong>: it happens only when you open that screen. As
+  long as you do not open it, no account is created.
+</p>
+
+<h2>What is transmitted when you play online</h2>
+<p>
+  When you publish a round, or when you answer another player's round, the app sends
+  exactly this:
+</p>
+<ul>
+  <li>your <strong>anonymous identifier</strong>;</li>
+  <li>your <strong>nickname</strong>, as you chose it in the app;</li>
+  <li>the <strong>score</strong> of the round;</li>
+  <li>the <strong>letters of the draw</strong> and the dictionary word they come from, so
+  that your opponent faces exactly the same grid;</li>
+  <li>the <strong>timestamped list of the words you found</strong> — each word, its points,
+  and the second of the round at which you played it. This is what lets your opponent
+  watch you play live even though you played yesterday. Seconds are counted from the start
+  of the round, never as real clock times;</li>
+  <li>the <strong>language</strong> of the draw and the date it was sent.</li>
+</ul>
+<p>
+  Nothing else. No contact details, no location, no device identifier, no freely written
+  content: the words transmitted are French dictionary words you formed from the letters
+  of the draw. <strong>A round you abandon is never published.</strong>
+</p>
+<p>
+  Your nickname is visible to players who take on your round. It is a free field: we
+  recommend not putting your real name or any identifying information in it.
+</p>
+
+<h2>Where this data is hosted</h2>
+<p>
+  Shared rounds are stored in <strong>Cloud Firestore</strong> (Google), in the
+  <code>anagramme-chrono</code> project, in region <strong>eur3 — Europe</strong>. That
+  choice is deliberate and irreversible: <strong>the data stays in Europe</strong>. Google
+  acts here as a hosting provider on our behalf. Traffic is encrypted in transit
+  (HTTPS/TLS).
+</p>
+
+<h2>Retention and deletion</h2>
+<p>
+  Let us be precise, because this matters: <strong>a published round is final</strong>. The
+  database security rules forbid any modification and any deletion from the app. You
+  therefore cannot delete a round you have published from within the game. This is a
+  design decision — a duel cannot be rewritten after the fact — but it has to be stated
+  plainly.
+</p>
+<p>
+  Rounds are kept without a predefined duration, so that they remain available to the
+  players who will take them on. <strong>To have your published rounds and the anonymous
+  identifier attached to them deleted, write to the contact address below</strong>:
+  deletion is carried out manually, within thirty days. Local data, on the other hand, can
+  be erased at any time from the app's Android settings, or by uninstalling it.
 </p>
 
 <h2>No ads, no trackers</h2>
 <p>
-  Anagramme chrono shows no advertising. The app contains no analytics, no measurement
-  tool, no crash reporter, and never reads your device's advertising identifier. No
-  Android permission is requested.
+  Anagramme chrono shows no advertising. The app contains no advertising SDK, no analytics
+  or measurement tool (no Google Analytics, no Firebase Analytics, nor any equivalent), no
+  crash reporter, and never reads the Android advertising identifier (Advertising ID). No
+  data is sold, rented, or passed on to advertisers or data brokers.
 </p>
 
 <h2>No in-app purchases</h2>
@@ -55,38 +148,65 @@
   the app has access to no payment data whatsoever.
 </p>
 
-<h2>Children</h2>
+<h2>Android permissions</h2>
+<ul>
+  <li><strong>Internet</strong> (<code>INTERNET</code>) — publishing and receiving online
+  duel rounds.</li>
+  <li><strong>Network state</strong> (<code>ACCESS_NETWORK_STATE</code>) — knowing whether
+  a connection is available, so the app can honestly say "offline" instead of waiting for
+  nothing.</li>
+  <li><strong>Google services</strong> (<code>READ_GSERVICES</code>) — required by the
+  Google libraries used to reach the database.</li>
+</ul>
 <p>
-  Anagramme chrono is suitable for all audiences, children included. Since no data is
-  collected, no children's data is collected either: the app asks for no real name, no
-  age, no email address, no location, no contacts, and no access to the camera or
-  microphone. It contains no advertising, no messaging, no social features and no
-  user-generated content, and allows no communication between players — the opponent is a
-  program, not a person.
+  No other permission is requested: no camera, no microphone, no location, no contacts, no
+  storage, no notifications.
 </p>
 
 <h2>Your rights</h2>
 <p>
-  As no personal data is collected or held outside your device, there is nothing for us
-  to access, correct, export or delete. You retain full control of the local data: it is
-  erased from the app's Android settings, or by uninstalling it.
+  Under the GDPR, you may request access to the information concerning you, its
+  rectification or its deletion, or object to its processing. The processing tied to
+  online duels rests on performing the service you ask for: it starts only once you open
+  that mode and publish a round. One address covers all such requests, given below. Since
+  the identifier is anonymous, please state in your message the nickname you used and the
+  approximate date of the rounds concerned — otherwise we cannot find them.
 </p>
 
-<h2>Changes</h2>
+<h2>Children</h2>
 <p>
-  Any change to this policy will be published at this address, with a new update date.
-  Should a future version of Anagramme chrono collect data, this page would be updated
-  before that version is released.
+  Anagramme chrono is suitable for all audiences, children included, and the game asks for
+  <strong>no real name, no age, no email address, no location and no contacts</strong>, and
+  no access to the camera or microphone.
+</p>
+<p>
+  The online mode does deserve a plain description, though: it creates an anonymous
+  identifier and circulates player-produced content — the nickname and the words found.
+  That content is tightly bounded: <strong>there is no messaging, no free-text exchange
+  between players, no public profile, no photos and no way to contact another
+  player</strong>. The words exchanged are French dictionary words formed from the letters
+  of the draw. The only free field in the app is the nickname, chosen by the player; we
+  advise parents to check that it does not contain the child's real name. The campaign,
+  which can be played on its own and offline, transmits nothing at all.
+</p>
+
+<h2>Changes to this policy</h2>
+<p>
+  Any change to this policy is published at this address, with a new update date. This
+  version 1.1 supersedes version 1.0 of 9 August 2026, which described an entirely offline
+  app: that description stopped being accurate when the online duel was added, and this
+  update exists for that reason.
 </p>
 
 <h2>Contact</h2>
 <p>
-  For any question regarding this policy:
+  Publisher: Hugo Ferreira. App: Anagramme chrono (<code>com.hfc.anagramme_chrono</code>).
+  For any question regarding this policy, or to request deletion of your data:
   <a href="mailto:hugoferreirapro803@gmail.com">hugoferreirapro803@gmail.com</a>
 </p>
 
 <hr>
-<p class="footer">Anagramme chrono — offline word game. Developed by Hugo Ferreira.</p>
+<p class="footer">Anagramme chrono — a word game playable offline, with an optional online duel. Developed by Hugo Ferreira.</p>
 
 </body>
 </html>
