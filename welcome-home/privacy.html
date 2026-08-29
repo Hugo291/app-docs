@@ -1,142 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Guestleaf — Politique de confidentialité</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — Guestleaf</title>
 <style>
-  :root { --ink: #1F1D1A; --paper: #FAF8F5; --mute: #6B655C; --faint: #E8DCC8; --accent: #2D6A5A; }
-  * { box-sizing: border-box; }
-  body { background: var(--paper); color: var(--ink); font-family: -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; max-width: 720px; margin: 48px auto; padding: 0 24px 80px; line-height: 1.6; }
-  h1 { font-weight: 600; letter-spacing: -0.5px; margin-bottom: 4px; font-size: 32px; color: var(--accent); }
-  .meta { color: var(--mute); font-size: 14px; margin-bottom: 40px; }
-  h2 { font-weight: 600; letter-spacing: -0.3px; margin: 36px 0 8px; font-size: 20px; }
-  p, li { color: var(--ink); font-size: 16px; }
-  a { color: var(--accent); }
-  hr { border: none; border-top: 1px solid var(--faint); margin: 48px 0; }
-  .footer { color: var(--mute); font-size: 13px; font-style: italic; }
+  :root { --creme:#FAF8F5; --encre:#1F1D1A; --gris:#6B655C; --vert:#2D6A5A;
+           --bord:rgba(31,29,26,.12); }
+  body { margin:0; padding:48px 20px 96px; background:var(--creme);
+          color:var(--encre); font:16px/1.65 -apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:44rem; margin:0 auto; }
+  h1 { font-size:2rem; line-height:1.2; margin:0 0 .6em; font-weight:600; }
+  h2 { font-size:1.15rem; margin:2.4em 0 .5em; color:var(--vert); font-weight:600; }
+  p, li { color:#332F2A; }
+  ul { padding-left:1.2em; }
+  li { margin:.35em 0; }
+  code { background:rgba(45,106,90,.09); padding:.1em .35em; border-radius:4px;
+          font-size:.9em; }
+  strong { font-weight:600; }
+  table { border-collapse:collapse; width:100%; margin:1em 0; font-size:.95rem; }
+  th, td { text-align:left; padding:.6em .7em; border-bottom:1px solid var(--bord);
+            vertical-align:top; }
+  th { color:var(--gris); font-weight:600; }
+  @media (prefers-color-scheme: dark) {
+    :root { --creme:#16181A; --encre:#F0EDE7; --gris:#9A968F; --vert:#3F8A63;
+             --bord:rgba(240,237,231,.14); }
+    p, li { color:#DCD8D1; }
+  }
 </style>
 </head>
 <body>
-
-<h1>Guestleaf — Politique de confidentialité</h1>
-<p class="meta">Dernière mise à jour : 8 août 2026 · Version 1.0</p>
-
-<h2>Aucune collecte de données</h2>
-<p>
-  <strong>Guestleaf ne collecte aucune donnée personnelle.</strong> Il n'existe
-  aucun serveur, aucun compte, aucune inscription. Tout ce que vous saisissez —
-  logements, fiches, gestes, codes d'accès (wifi, boîte à clés, alarme), photos,
-  traductions — est enregistré dans la mémoire privée de l'application, sur votre
-  téléphone, dans une base locale Hive.
-</p>
-
+<main>
+<h1>Politique de confidentialité — Guestleaf</h1>
+<p><strong>Dernière mise à jour : 29 août 2026</strong></p>
+<p>Guestleaf est une application Android qui fonctionne entièrement sur votre téléphone. Elle n'a pas de compte, pas de serveur, et ne collecte aucune donnée personnelle.</p>
+<h2>Ce que l'application enregistre, et où</h2>
+<p>Tout ce que vous saisissez — logements, fiches, gestes, codes d'accès (wifi, boîte à clés, alarme), photos, traductions — est enregistré <strong>dans la mémoire privée de votre téléphone</strong>, dans l'espace réservé à l'application. Ces données ne sont ni transmises, ni sauvegardées ailleurs, ni consultables par l'éditeur.</p>
+<p>Il n'existe aucun serveur susceptible de les recevoir.</p>
 <h2>Photos</h2>
-<p>
-  Les photos que vous ajoutez à une fiche sont choisies dans la galerie, prises avec
-  l'appareil photo, ou importées depuis vos fichiers. Elles sont recopiées dans le
-  stockage privé de l'application et servent uniquement à composer le livret
-  imprimable. Aucune photo n'est envoyée nulle part.
-</p>
-
+<p>Les photos que vous ajoutez à une fiche sont choisies dans la galerie de votre téléphone. Elles restent sur l'appareil et servent uniquement à composer le livret imprimable. Aucune photo n'est envoyée nulle part.</p>
 <h2>Microphone</h2>
-<p>
-  L'application peut dicter les gestes d'une fiche. Le microphone n'est actif que
-  pendant la dictée, à votre demande explicite, et aucun enregistrement audio n'est
-  conservé.
-</p>
-<p>
-  <strong>Par défaut, la reconnaissance vocale est forcée en mode hors connexion</strong> :
-  la transcription est faite par le moteur vocal installé sur votre téléphone et
-  l'audio ne quitte pas l'appareil. Si la reconnaissance hors connexion ne répond
-  pas, l'application vous le dit et vous laisse choisir : réessayer, vérifier les
-  réglages Android, ou activer la dictée en ligne. Elle ne bascule
-  <strong>jamais</strong> d'elle-même.
-</p>
-<p>
-  Si vous activez la dictée en ligne, ce que vous dictez est transmis au service de
-  reconnaissance vocale de Google installé sur votre téléphone, qui applique sa
-  propre politique de confidentialité. L'écran de saisie l'indique alors en toutes
-  lettres (« Dictée envoyée à Google »), et le réglage se désactive à tout moment
-  depuis l'écran Traduction assistée.
-</p>
-
+<p>L'application peut dicter les gestes d'une fiche. Dans ce cas :</p>
+<ul><li>le microphone n'est actif que pendant la dictée, à votre demande explicite ;</li><li><strong>par défaut</strong>, la reconnaissance vocale est forcée en <strong>mode hors connexion</strong> : la transcription est faite par le moteur vocal installé sur votre téléphone, et l'audio ne quitte pas l'appareil ;</li><li>si la reconnaissance hors connexion n'est pas installée, l'application vous le dit et vous propose deux choix : installer le pack vocal d'Android, ou activer la <strong>dictée en ligne</strong>. Elle ne bascule <strong>jamais</strong> d'elle-même ;</li><li>si vous activez la dictée en ligne, ce que vous dictez est transmis au service de reconnaissance vocale de Google installé sur votre téléphone, qui applique sa propre politique de confidentialité. L'écran de saisie l'indique alors explicitement (« Dictée envoyée à Google »), et le réglage se désactive à tout moment depuis Traduction assistée ;</li><li>aucun enregistrement audio n'est conservé par l'application.</li></ul>
 <h2>Connexion Internet</h2>
-<p>
-  L'application n'établit qu'un seul type de connexion, et seulement si vous le
-  demandez explicitement : <strong>le téléchargement d'un modèle de traduction</strong>
-  depuis la plateforme Hugging Face (huggingface.co).
-</p>
-<p>
-  Comme toute requête sur Internet, ce téléchargement expose votre adresse IP à
-  Hugging Face et à son réseau de diffusion, qui appliquent leur propre politique de
-  confidentialité. <strong>Aucun contenu de vos fiches n'est transmis</strong> : la
-  requête ne contient que la demande du fichier. Une fois le modèle installé, les
-  traductions sont calculées sur votre téléphone, sans connexion.
-</p>
-
+<p>L'application n'établit que <strong>deux</strong> types de connexion, et uniquement si vous les déclenchez vous-même.</p>
+<p><strong>1. Le téléchargement d'un modèle de traduction</strong>, depuis la plateforme Hugging Face (<code>huggingface.co</code>). Comme toute requête sur Internet, il expose votre adresse IP à Hugging Face et à son réseau de diffusion, qui appliquent leur propre politique de confidentialité. <strong>Aucun contenu de vos fiches n'est transmis</strong> : la requête ne contient que la demande du fichier de modèle. Une fois le modèle installé, les traductions sont calculées sur votre appareil, sans connexion.</p>
+<p><strong>2. Le téléchargement des photos d'un livret que vous avez reçu</strong>, lorsque l'hôte a choisi de les héberger lui-même au lieu de les inclure dans le fichier. L'application télécharge alors ces images depuis les adresses que l'hôte a inscrites dans le livret — un hébergeur de son choix, sur lequel nous n'avons aucun contrôle. Votre adresse IP est exposée à cet hébergeur. Ce téléchargement est annoncé avant l'import, et il n'a lieu qu'une fois : les photos sont ensuite conservées sur votre appareil.</p>
+<p>Aucune autre connexion n'existe. L'application ne contacte aucun serveur qui nous appartiendrait — il n'y en a pas.</p>
 <h2>Impression et partage</h2>
-<p>
-  Le livret A4 est généré sur l'appareil, puis remis au système d'impression ou de
-  partage d'Android. Ce que vous en faites ensuite relève de vos choix et des
-  applications que vous sélectionnez.
-</p>
-
-<h2>Aucune publicité, aucun tracking</h2>
-<p>
-  L'application ne contient aucune publicité, aucun SDK publicitaire, aucun
-  identifiant publicitaire, aucun outil de mesure d'audience, aucun rapport de
-  plantage automatique. Aucune donnée n'est partagée ni vendue à des tiers.
-</p>
-
-<h2>Aucune sauvegarde dans le cloud</h2>
-<p>
-  Si vous changez de téléphone ou désinstallez l'application, vos livrets ne suivent
-  pas. C'est la conséquence assumée de tout ce qui précède.
-</p>
-
+<p>Le livret A4 est généré sur l'appareil, puis remis au système d'impression ou de partage d'Android. Ce que vous en faites ensuite (imprimer, enregistrer, envoyer) relève de vos choix et des applications que vous sélectionnez.</p>
+<h2>Envoyer un livret à un voyageur</h2>
+<p>Vous pouvez remettre votre livret à un voyageur sous la forme d'un fichier <code>.guestleaf</code>. L'application <strong>écrit ce fichier sur votre appareil et le remet au sélecteur de partage d'Android</strong> ; c'est vous qui choisissez l'application qui le transportera (messagerie, courriel, Bluetooth…), et c'est cette application qui l'achemine. Guestleaf n'envoie rien elle-même et ne dispose d'aucun serveur par lequel un livret transiterait.</p>
+<p><strong>Le fichier ne contient aucun code d'accès.</strong> Le mot de passe wifi, le code de la boîte à clés et celui de l'alarme n'y figurent pas — non pas parce qu'un filtre les retire, mais parce que le format d'échange n'a pas de champ pour les porter. Ils ne quittent votre appareil que par le livret que vous imprimez.</p>
+<p>Le fichier contient : le nom, la ville, l'adresse et la signature du logement, le texte des fiches et leurs traductions, et les photos. <strong>Les photos exportées sont ré-encodées et leurs métadonnées EXIF supprimées</strong> — notamment les coordonnées GPS que les téléphones y inscrivent, qui révéleraient l'adresse exacte du logement.</p>
+<p>Le fichier est brouillé pour n'être ni lisible ni modifiable à la main, comme l'est un QR code. <strong>Ce n'est pas du chiffrement</strong> et nous ne le présentons pas comme tel : quiconque en aurait la volonté pourrait en extraire le contenu. C'est précisément pour cela qu'aucun code d'accès n'y figure.</p>
+<h2>Ce que l'application ne fait pas</h2>
+<ul><li>Aucun compte, aucune inscription, aucune authentification.</li><li>Aucune publicité, aucun traceur, aucune mesure d'audience ou d'analytics.</li><li>Aucun rapport de plantage automatique.</li><li>Aucun partage ni vente de données à des tiers.</li><li>Aucune sauvegarde dans le cloud : si vous changez de téléphone ou désinstallez l'application, vos livrets ne suivent pas.</li><li>Aucun envoi de livret par nos soins : nous n'avons ni serveur, ni relais, ni copie de ce que vous transmettez.</li></ul>
 <h2>Autorisations demandées</h2>
-<ul>
-  <li><strong>Microphone</strong> — dicter les gestes d'une fiche. Hors connexion par
-    défaut ; en ligne seulement si vous l'activez.</li>
-  <li><strong>Internet</strong> — télécharger un modèle de traduction, uniquement à
-    votre demande.</li>
-  <li><strong>Appareil photo et photos</strong> — choisir l'illustration d'une fiche,
-    via les sélecteurs d'Android.</li>
-</ul>
-
+<table><thead><tr><th>Autorisation</th><th>Pourquoi</th></tr></thead><tbody><tr><td>Microphone (<code>RECORD_AUDIO</code>)</td><td>Dicter les gestes d'une fiche. Reconnaissance hors connexion par défaut ; en ligne seulement si vous l'activez.</td></tr><tr><td>Internet (<code>INTERNET</code>)</td><td>Télécharger un modèle de traduction, et les photos d'un livret reçu dont l'hôte les a hébergées. Uniquement à votre demande, dans les deux cas.</td></tr><tr><td>Accès aux photos</td><td>Choisir une photo pour une fiche, via le sélecteur d'Android.</td></tr></tbody></table>
 <h2>Supprimer vos données</h2>
-<p>
-  Appui long sur la carte d'un logement, puis « Supprimer ». Pour tout effacer :
-  désinstallez l'application, ou videz ses données depuis Paramètres › Applications ›
-  Guestleaf › Stockage. Aucune demande n'est à nous adresser : nous n'avons accès
-  à rien.
-</p>
-
+<ul><li>Supprimer un logement : appui long sur sa carte, puis « Supprimer ».</li><li>Tout supprimer : désinstallez l'application, ou effacez ses données depuis Paramètres › Applications › Guestleaf › Stockage.</li></ul>
+<p>Aucune demande n'est à adresser à l'éditeur : il n'a accès à rien.</p>
 <h2>Enfants</h2>
-<p>
-  L'application s'adresse à des adultes qui louent un logement. Elle ne cible pas les
-  enfants et ne collecte sciemment aucune donnée les concernant.
-</p>
-
-<h2>Modifications de cette politique</h2>
-<p>
-  Cette politique peut être mise à jour en cas d'évolution majeure de l'application.
-  La date de dernière mise à jour est indiquée en haut de cette page.
-</p>
-
+<p>L'application ne s'adresse pas aux enfants et ne collecte sciemment aucune donnée les concernant.</p>
+<h2>Modifications</h2>
+<p>Toute modification de cette politique sera publiée sur cette page, avec une nouvelle date de mise à jour.</p>
 <h2>Contact</h2>
-<p>
-  Éditeur : Hugo Ferreira. Application : Guestleaf (com.hfc.welcome_home). Pour
-  toute question concernant cette politique de confidentialité :
-  <a href="mailto:hugoferreirapro803@gmail.com">hugoferreirapro803@gmail.com</a>
-</p>
-
-<hr>
-
-<p class="footer">
-  Guestleaf — le livret d’accueil de votre logement, imprimé sur papier. Pas de cloud. Pas de compte. Pas de publicité. Pas de tracking.
-</p>
-
+<p>&lt;!-- À REMPLACER avant publication : cette adresse sera publique sur la fiche Play Store. --&gt; <code>ADRESSE-EMAIL-A-RENSEIGNER</code></p>
+</main>
 </body>
 </html>
