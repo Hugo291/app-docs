@@ -81,8 +81,7 @@
 <p>
   L'application ne demande aucune permission Android sensible : ni localisation,
   ni contacts, ni photos, ni microphone, ni appareil photo, ni stockage partagé.
-  La seule permission incluse est celle de la facturation Google Play
-  (<strong>com.android.vending.BILLING</strong>), nécessaire à l'achat unique
+  Les seules permissions déclarées viennent du module de facturation Google Play : <code>com.android.vending.BILLING</code>, nécessaire à l'achat unique décrit ci-dessus, ainsi que <code>INTERNET</code> et <code>ACCESS_NETWORK_STATE</code>, que ce module ajoute automatiquement pour dialoguer avec le Play Store. Le jeu lui-même n'ouvre jamais de connexion : sans achat, l'application ne se sert d'aucune des trois.vending.BILLING</strong>), nécessaire à l'achat unique
   décrit ci-dessus.
 </p>
 

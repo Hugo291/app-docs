@@ -77,8 +77,7 @@
 <h2>No sensitive permissions requested</h2>
 <p>
   The app requests no sensitive Android permission: no location, no contacts, no
-  photos, no microphone, no camera, no shared storage. The only permission included
-  is Google Play billing (<strong>com.android.vending.BILLING</strong>), required
+  photos, no microphone, no camera, no shared storage. The only permissions declared come from the Google Play billing module: <code>com.android.vending.BILLING</code>, required for the one-time purchase described above, plus <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code>, which that module adds automatically to talk to the Play Store. The game itself never opens a connection: without a purchase, the app uses none of the three.vending.BILLING</strong>), required
   for the one-time purchase described above.
 </p>
 
