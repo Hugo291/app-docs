@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — Quittes</title>
+<style>
+  :root { --creme:#FAF8F5; --encre:#1F1D1A; --gris:#6B655C; --vert:#5E35B1;
+           --bord:rgba(31,29,26,.12); }
+  body { margin:0; padding:48px 20px 96px; background:var(--creme);
+          color:var(--encre); font:16px/1.65 -apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:44rem; margin:0 auto; }
+  h1 { font-size:2rem; line-height:1.2; margin:0 0 .6em; font-weight:600; }
+  h2 { font-size:1.15rem; margin:2.4em 0 .5em; color:var(--vert); font-weight:600; }
+  p, li { color:#332F2A; }
+  ul { padding-left:1.2em; }
+  li { margin:.35em 0; }
+  code { background:rgba(94,53,177,.09); padding:.1em .35em; border-radius:4px;
+          font-size:.9em; }
+  strong { font-weight:600; }
+  table { border-collapse:collapse; width:100%; margin:1em 0; font-size:.95rem; }
+  th, td { text-align:left; padding:.6em .7em; border-bottom:1px solid var(--bord);
+            vertical-align:top; }
+  th { color:var(--gris); font-weight:600; }
+  @media (prefers-color-scheme: dark) {
+    :root { --creme:#16181A; --encre:#F0EDE7; --gris:#9A968F; --vert:#B39DDB;
+             --bord:rgba(240,237,231,.14); }
+    p, li { color:#DCD8D1; }
+  }
+</style>
+</head>
+<body>
+<main>
+<h1>Politique de confidentialité — Quittes</h1>
+<p><strong>Dernière mise à jour : 4 septembre 2026</strong></p>
+<p>Quittes est une application Android éditée par <strong>Hugo Ferreira</strong>. Elle sert à partager des dépenses entre amis à partir de photos de tickets de caisse. Elle fonctionne entièrement sur votre téléphone : <strong>pas de compte, pas de serveur, aucune donnée personnelle collectée</strong>.</p>
+<h2>Ce que l'application enregistre, et où</h2>
+<p>Tout ce que vous saisissez — le nom de votre pot, les prénoms de vos ami·es, les dépenses (titre, montant, date, catégorie, qui a payé, qui participe), les remboursements et vos réglages — est enregistré <strong>dans la mémoire privée de votre téléphone</strong>, dans l'espace réservé à l'application. Ces données ne sont ni transmises, ni sauvegardées ailleurs, ni consultables par l'éditeur.</p>
+<p>Il n'existe aucun serveur susceptible de les recevoir.</p>
+<h2>Lecture des tickets (caméra et photos)</h2>
+<p>Pour lire un ticket, l'application utilise la caméra ou une image de votre galerie. La reconnaissance du texte (montant, magasin, date) est faite <strong>sur l'appareil</strong>, par le moteur de reconnaissance de texte de Google ML Kit installé avec l'application, <strong>hors connexion</strong>.</p>
+<ul><li>La caméra n'est active que sur l'écran de scan, à votre demande.</li><li><strong>Aucune photo n'est envoyée nulle part</strong> et aucune photo n'est conservée par l'application : une fois le montant lu, l'image n'est plus utilisée.</li><li>Le bandeau « Récentes » de l'écran de scan affiche vos dernières images pour vous éviter d'ouvrir la galerie. Il ne fait que les afficher ; il n'en copie ni n'en transmet aucune. Si vous refusez l'accès aux photos, l'application propose le sélecteur système d'Android, qui n'exige aucune autorisation.</li></ul>
+<h2>Connexion Internet</h2>
+<p>L'application n'a besoin d'aucune connexion pour fonctionner et n'en établit aucune de son propre chef. Elle embarque des composants Firebase (Google) destinés à une future fonction de pots partagés ; dans cette version, <strong>cette fonction n'est pas proposée</strong>, aucun compte ne peut être créé et aucune donnée n'est envoyée à Firebase. Si une version ultérieure introduit le partage en ligne, cette politique sera mise à jour avant, et le partage restera un choix explicite de votre part : le mode local restera disponible sans compte.</p>
+<h2>Export</h2>
+<p>Vous pouvez copier vos dépenses au format CSV dans le presse-papiers, ou copier un rappel de remboursement pour le coller dans une messagerie ou une application de paiement. Ce que vous en faites ensuite relève de vos choix et des applications que vous sélectionnez : Quittes n'envoie rien elle-même.</p>
+<h2>Ce que l'application ne fait pas</h2>
+<ul><li>Aucun compte, aucune inscription, aucune authentification.</li><li>Aucune publicité, aucun traceur, aucune mesure d'audience ou d'analytics.</li><li>Aucun rapport de plantage automatique.</li><li>Aucun achat intégré.</li><li>Aucun partage ni vente de données à des tiers.</li><li>Aucune sauvegarde dans le cloud : si vous changez de téléphone ou désinstallez l'application, vos dépenses ne suivent pas.</li></ul>
+<h2>Autorisations demandées</h2>
+<table><thead><tr><th>Autorisation</th><th>Pourquoi</th></tr></thead><tbody><tr><td>Caméra (<code>CAMERA</code>)</td><td>Photographier un ticket pour en lire le montant, sur l'appareil.</td></tr><tr><td>Photos et images (<code>READ_MEDIA_IMAGES</code>, <code>READ_MEDIA_VISUAL_USER_SELECTED</code>)</td><td>Afficher vos images récentes sur l'écran de scan et en choisir une à lire. Facultative : sans elle, le sélecteur système prend le relais.</td></tr><tr><td>Internet (<code>INTERNET</code>)</td><td>Présente pour les composants Firebase embarqués. Non utilisée dans cette version : aucune connexion n'est établie.</td></tr></tbody></table>
+<h2>Supprimer vos données</h2>
+<ul><li>Supprimer une dépense : ouvrez-la, puis « Supprimer ».</li><li>Retirer un·e ami·e : Réglages › Membres › « − ».</li><li>Tout effacer : Réglages › « Remettre les compteurs à zéro », ou désinstallez l'application, ou effacez ses données depuis Paramètres › Applications › Quittes › Stockage.</li></ul>
+<p>Aucune demande n'est à adresser à l'éditeur : il n'a accès à rien.</p>
+<h2>Enfants</h2>
+<p>L'application ne s'adresse pas aux enfants et ne collecte sciemment aucune donnée les concernant.</p>
+<h2>Modifications</h2>
+<p>Toute modification de cette politique sera publiée sur cette page, avec une nouvelle date de mise à jour.</p>
+<h2>Contact</h2>
+<p>Éditeur : Hugo Ferreira. Pour toute question concernant cette politique de confidentialité : <code>hugoferreirapro803@gmail.com</code></p>
+</main>
+</body>
+</html>

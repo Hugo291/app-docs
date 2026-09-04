@@ -8,6 +8,10 @@ Privacy policies and legal documents for my Android apps. Served via GitHub Page
 - [Privacy Policy FR](https://hugo291.github.io/app-docs/routine-five/privacy.html)
 - [Privacy Policy EN](https://hugo291.github.io/app-docs/routine-five/privacy.en.html)
 
+### Quittes
+- [Privacy Policy FR](https://hugo291.github.io/app-docs/quittes/privacy.html)
+- [Privacy Policy EN](https://hugo291.github.io/app-docs/quittes/privacy.en.html)
+
 ### MiniGeste
 - [Privacy Policy EN](https://hugo291.github.io/app-docs/minigeste/privacy.html)
 
