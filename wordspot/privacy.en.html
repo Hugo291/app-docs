@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Wordspot</title>
+<style>
+  :root { --creme:#FAF8F5; --encre:#1F1D1A; --gris:#6B655C; --vert:#5E35B1;
+           --bord:rgba(31,29,26,.12); }
+  body { margin:0; padding:48px 20px 96px; background:var(--creme);
+          color:var(--encre); font:16px/1.65 -apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:44rem; margin:0 auto; }
+  h1 { font-size:2rem; line-height:1.2; margin:0 0 .6em; font-weight:600; }
+  h2 { font-size:1.15rem; margin:2.4em 0 .5em; color:var(--vert); font-weight:600; }
+  p, li { color:#332F2A; }
+  ul { padding-left:1.2em; }
+  li { margin:.35em 0; }
+  code { background:rgba(94,53,177,.09); padding:.1em .35em; border-radius:4px;
+          font-size:.9em; }
+  strong { font-weight:600; }
+  table { border-collapse:collapse; width:100%; margin:1em 0; font-size:.95rem; }
+  th, td { text-align:left; padding:.6em .7em; border-bottom:1px solid var(--bord);
+            vertical-align:top; }
+  th { color:var(--gris); font-weight:600; }
+  @media (prefers-color-scheme: dark) {
+    :root { --creme:#16181A; --encre:#F0EDE7; --gris:#9A968F; --vert:#B39DDB;
+             --bord:rgba(240,237,231,.14); }
+    p, li { color:#DCD8D1; }
+  }
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy Policy — Wordspot</h1>
+<p><strong>Last updated: September 5, 2026</strong></p>
+<p>Wordspot is an Android app (<code>com.hfc.wordspot</code>) published on Google Play by <strong>PIXELMORE</strong> (Hugo Ferreira). It is a word bingo played in a group, in real time: one person prepares a grid of words, invites friends with a code, and everyone spots the words as the game goes on. For everyone to see the same game at the same moment, the app needs an <strong>account</strong> and a <strong>server</strong>. This page describes exactly what is stored, where, and why.</p>
+<h2>The service used: Firebase</h2>
+<p>Accounts and game data are hosted by <strong>Firebase</strong>, a service of Google LLC. Wordspot uses only two of its components: <strong>Firebase Authentication</strong> (accounts) and <strong>Cloud Firestore</strong> (game data). Data is stored in the <strong>eur3 (Europe)</strong> region. Google's processing is governed by the <a href="https://firebase.google.com/support/privacy">Firebase privacy policy</a>.</p>
+<p>No other SDK is bundled: no advertising, no audience-measurement tool (Firebase Analytics is disabled), no automatic crash reporting.</p>
+<h2>Your account</h2>
+<p>There are two ways into the app:</p>
+<ul><li><strong>With a Google account.</strong> The app then receives from Google a Firebase user ID, your display name, your e-mail address and the URL of your profile picture. The <strong>name and picture</strong> are stored in Firestore so they can be shown to the other members of your groups. Your <strong>e-mail address is not stored in Firestore</strong>: it stays in Firebase Authentication, where it is used solely to recognise you from one sign-in to the next. A Google account is required to <em>create</em> a group, so that the group does not vanish with a device.</li><li><strong>As a guest.</strong> Firebase creates an anonymous account, with no e-mail or password, and you choose a <strong>nickname</strong>, stored in Firestore so it can be shown to the other members. This account is tied to the device: if you uninstall the app or change phones, it is lost, together with its groups.</li></ul>
+<h2>What you create while playing</h2>
+<p>Everything that makes a game run is stored in Firestore:</p>
+<ul><li><strong>groups</strong>: name, description, invitation code, list of members and their role (owner, editor or player);</li><li><strong>games</strong>: title, words entered and who added them, reports and validations, ticked cells, rankings, winner, durations.</li></ul>
+<p>This content is visible <strong>only to the members of the group concerned</strong>. Groups are private: you can only enter one with its invitation code, and there is no public directory and no search for groups or players.</p>
+<h2>Why this data</h2>
+<p>A single purpose: making the game work in real time between the members of a group. This data is used for nothing else — no profiling, no advertising, no usage statistics.</p>
+<h2>What the app does not do</h2>
+<ul><li>No advertising, no trackers, no audience measurement or analytics.</li><li>No sharing or selling of data to third parties: the only recipient is Firebase (Google), as the hosting provider.</li><li>No access to your location, contacts, photos, camera or microphone.</li><li>No in-app purchases.</li></ul>
+<h2>Permissions requested</h2>
+<table><thead><tr><th>Permission</th><th>Why</th></tr></thead><tbody><tr><td>Internet (<code>INTERNET</code>)</td><td>Communicate with Firebase: sign in, join a group, follow the game live. It is the only permission requested.</td></tr></tbody></table>
+<h2>Security</h2>
+<p>Exchanges between the app and Firebase are encrypted in transit (TLS). Firestore security rules restrict access to each group to its members: a user can only read or modify the groups they belong to.</p>
+<h2>Retention and deletion</h2>
+<p>Your data is kept for as long as your account and your groups exist. To <strong>delete your account and all associated data</strong>, write to <code>hugoferreirapro803@gmail.com</code> — from the address of your Google account, or stating your nickname and your group code if it is a guest account. Requests are handled within <strong>30 days</strong>. A guest account also disappears with the device that created it.</p>
+<h2>Your rights</h2>
+<p>Under the GDPR, you have the right to access, rectify, erase and port the data concerning you, and to object to its processing. To exercise these rights, write to <code>hugoferreirapro803@gmail.com</code>. You may also lodge a complaint with your data protection authority (in France, the CNIL) if you believe your rights are not being respected.</p>
+<h2>Children</h2>
+<p>The app is intended for people aged 13 and over and does not knowingly collect any data about children under 13. If you believe a child under 13 has created an account, write to us: it will be deleted.</p>
+<h2>Changes</h2>
+<p>Any change to this policy will be published on this page, with a new update date.</p>
+<h2>Contact</h2>
+<p>Publisher: PIXELMORE (Hugo Ferreira), for the app “Wordspot”. For any questions about this privacy policy: <code>hugoferreirapro803@gmail.com</code></p>
+</main>
+</body>
+</html>
