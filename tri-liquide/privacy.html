@@ -23,24 +23,56 @@
 <body>
 
 <h1>Tri liquide — Politique de confidentialité</h1>
-<p class="meta">Dernière mise à jour : 16 août 2026 · Version 1.0</p>
+<p class="meta">Dernière mise à jour : 15 septembre 2026 · Version 1.1 (application 1.0.4 et suivantes)</p>
 
 <p>
-  Tri liquide est un jeu de réflexion hors ligne. Cette page décrit exactement ce
-  que l'application fait de vos données. Elle est courte parce qu'il n'y a pas
-  grand-chose à dire.
+  Tri liquide est un jeu de réflexion qui se joue hors ligne. Cette page décrit
+  exactement ce que l'application fait de vos données.
 </p>
 
-<h2>Ce que l'application collecte elle-même : rien</h2>
+<h2>Ce que l'application ne demande pas</h2>
 <p>
   Aucun compte n'est demandé. L'application n'accède ni à vos contacts, ni à votre
-  position, ni à vos photos, ni à votre microphone, ni à votre appareil photo, ni à
-  votre carnet d'adresses. Elle ne contient aucun outil de mesure d'audience et
-  n'envoie aucune donnée vers un serveur qui nous appartiendrait — il n'y en a pas.
+  position GPS, ni à vos photos, ni à votre microphone, ni à votre appareil photo,
+  ni à votre carnet d'adresses. Elle n'envoie aucune donnée vers un serveur qui nous
+  appartiendrait — il n'y en a pas.
 </p>
 <p>
-  Deux services de Google interviennent cependant, et eux collectent des données :
-  la facturation, et la publicité récompensée. Les deux sont décrits ci-dessous.
+  Trois services de Google interviennent en revanche, et eux collectent des
+  données : la <strong>mesure d'audience</strong> (Google Analytics for Firebase),
+  la <strong>publicité récompensée</strong> (Google AdMob) et la
+  <strong>facturation</strong> (Google Play). Les trois sont décrits ci-dessous.
+</p>
+
+<h2>La mesure d'audience</h2>
+<p>
+  Depuis la version 1.0.4, l'application intègre <strong>Google Analytics for
+  Firebase</strong>. Il sert à savoir combien de personnes jouent, combien de temps,
+  et à rapprocher les revenus publicitaires de l'usage réel du jeu. Il fonctionne
+  tout seul : nous n'y ajoutons aucun suivi particulier.
+</p>
+<p>Ce que Google Analytics collecte automatiquement :</p>
+<table>
+  <tr><th>Donnée</th><th>Exemple</th></tr>
+  <tr><td>Un identifiant d'installation</td><td>Un numéro aléatoire créé à l'installation, qui change si vous réinstallez le jeu</td></tr>
+  <tr><td>L'usage de l'application</td><td>Première ouverture, sessions, écrans affichés, temps d'utilisation, mises à jour</td></tr>
+  <tr><td>Les achats intégrés</td><td>Le paquet acheté, son prix et la devise — jamais votre moyen de paiement</td></tr>
+  <tr><td>Des informations techniques</td><td>Modèle du téléphone, version d'Android, langue, taille d'écran</td></tr>
+  <tr><td>Une localisation approximative</td><td>Pays, région ou ville, déduits par Google de l'adresse IP</td></tr>
+  <tr><td>L'identifiant publicitaire</td><td>S'il est disponible sur votre appareil</td></tr>
+</table>
+<p>
+  Ces statistiques ne portent ni votre nom, ni votre adresse e-mail, ni votre numéro
+  de téléphone : nous ne pouvons pas les relier à vous. Elles sont envoyées chiffrées
+  à Google, traitées sur ses serveurs (y compris hors de l'Union européenne) et
+  effacées automatiquement au terme de la durée de conservation de Google Analytics,
+  14 mois au plus. Nous les consultons sous forme de chiffres agrégés.
+</p>
+<p>
+  Le traitement relève de la
+  <a href="https://policies.google.com/privacy">politique de confidentialité de Google</a>
+  et de la page
+  <a href="https://policies.google.com/technologies/partner-sites">Comment Google utilise les données</a>.
 </p>
 
 <h2>La publicité récompensée</h2>
@@ -52,9 +84,14 @@
 </p>
 <p>
   Ces vidéos sont fournies par <strong>Google AdMob</strong>. Pour les choisir,
-  AdMob peut lire l'<strong>identifiant publicitaire</strong> de votre appareil
-  ainsi que des informations techniques (modèle, système, langue, adresse IP
-  approximative). Nous n'y avons pas accès et ne recevons aucune de ces données.
+  mesurer leur diffusion et lutter contre la fraude, AdMob collecte
+  l'<strong>identifiant publicitaire</strong> de votre appareil, votre
+  <strong>adresse IP</strong> (dont il déduit une localisation approximative), vos
+  <strong>interactions avec les publicités</strong> (vidéo vue, touchée, fermée) et
+  des <strong>informations de diagnostic</strong> (performances, plantages du module
+  publicitaire). Google utilise ces données pour ses propres services publicitaires.
+  Nous n'y avons pas accès en détail : AdMob ne nous montre que des totaux (nombre de
+  vidéos vues, revenus).
 </p>
 <p>
   Vous gardez la main sur cet identifiant :
@@ -80,9 +117,9 @@
   <tr><td>Vos réglages</td><td>Couleur de fond, sons, musique, vibrations, mode daltonien, mode main gauche</td></tr>
 </table>
 <p>
-  Ces données <strong>ne quittent jamais l'appareil</strong>. Elles ne sont
-  envoyées à aucun serveur, ni au nôtre — il n'y en a pas — ni à celui d'un tiers.
-  Elles disparaissent entièrement quand vous désinstallez l'application.
+  Ces données <strong>ne quittent jamais l'appareil</strong> : ni votre
+  progression, ni vos indices, ni vos réglages ne sont envoyés à un serveur. Elles
+  disparaissent entièrement quand vous désinstallez l'application.
 </p>
 
 <h2>Les achats</h2>
@@ -91,6 +128,8 @@
   <strong>par Google Play</strong>, jamais par nous. Nous ne voyons ni votre moyen
   de paiement, ni votre nom, ni votre adresse : Google nous indique seulement qu'un
   achat a été validé, afin que l'application puisse créditer ce qui a été payé.
+  Google Analytics enregistre aussi l'achat (paquet, prix, devise), comme indiqué
+  plus haut.
 </p>
 <p>
   Le traitement de ces données par Google relève de la
@@ -107,10 +146,13 @@
 
 <h2>Vos droits</h2>
 <p>
-  Nous ne détenons aucune donnée vous concernant : il n'y a rien à consulter,
-  corriger ou supprimer de notre côté. Pour les données détenues par Google,
-  adressez-vous à Google, ou réinitialisez votre identifiant publicitaire depuis
-  les réglages Android. Pour effacer toutes les données locales, il suffit de
+  Nous ne détenons aucune donnée qui permette de vous identifier : les statistiques
+  de Google Analytics et d'AdMob sont rattachées à un identifiant d'installation ou
+  publicitaire, jamais à votre nom, et nous n'avons aucun moyen de retrouver celles
+  d'une personne précise. Elles s'effacent d'elles-mêmes au terme de leur durée de
+  conservation. Pour les données détenues par Google, adressez-vous à Google. Vous
+  pouvez aussi réinitialiser ou supprimer votre identifiant publicitaire depuis les
+  réglages Android, et réinstaller le jeu crée un nouvel identifiant d'installation. Pour effacer toutes les données locales, il suffit de
   désinstaller l'application, ou d'utiliser
   <strong>Paramètres Android → Applications → Tri liquide → Stockage → Effacer les
   données</strong>.
@@ -118,8 +160,10 @@
 
 <h2>Modifications</h2>
 <p>
-  Si une version future ajoute quoi que ce soit qui collecte des données — une
-  mesure d'audience, un classement en ligne —, cette page sera mise à jour
+  La version 1.1 de cette page (15 septembre 2026) ajoute la mesure d'audience par
+  Google Analytics for Firebase, arrivée avec l'application 1.0.4, et détaille ce
+  que collecte AdMob. Si une version future ajoute autre chose qui collecte des
+  données — un classement en ligne, par exemple —, cette page sera mise à jour
   <strong>avant</strong> la mise en ligne de cette version, et la fiche Play Store
   en fera état.
 </p>
