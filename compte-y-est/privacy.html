@@ -20,38 +20,73 @@
 <body>
 
 <h1>Le Compte y est — Politique de confidentialité</h1>
-<p class="meta">Dernière mise à jour : 23 août 2026 · Version 1.0</p>
+<p class="meta">Dernière mise à jour : 17 septembre 2026 · Version 1.1</p>
 
-<h2>Aucune collecte de données</h2>
+<h2>Ce qui reste sur votre téléphone</h2>
 <p>
-  <strong>Le Compte y est ne collecte aucune donnée personnelle.</strong> L'application
-  est un jeu de calcul mental qui ne demande aucun compte et n'identifie jamais
-  l'utilisateur. Vos réglages (durée du chronomètre, composition du tirage, thème
-  clair/sombre) et votre progression (statistiques, meilleurs temps, tirage du jour,
-  série de jours consécutifs) sont stockés exclusivement sur votre appareil.
+  <strong>Le Compte y est ne demande aucun compte et ne vous identifie jamais.</strong>
+  Vos réglages (durée du chronomètre, composition du tirage, thème) et votre
+  progression (statistiques, meilleurs temps, série de jours) sont stockés
+  <strong>uniquement sur votre appareil</strong>. Les tirages et les solutions sont
+  calculés sur place : le jeu se joue entièrement hors connexion.
+</p>
+<p>
+  Deux fonctions seulement sortent du téléphone, et elles sont décrites ci-dessous :
+  la <strong>vidéo publicitaire d'un indice</strong> et le <strong>classement du
+  tirage du jour</strong>. Nous ne demandons jamais d'email, de nom, de numéro de
+  téléphone ni aucune autre information d'identification.
 </p>
 
-<h2>Aucune donnée personnelle envoyée vers nos serveurs</h2>
+<h2>La publicité, seulement si vous demandez un indice</h2>
 <p>
-  L'application ne transmet aucune donnée personnelle à nos serveurs ni à des tiers.
-  Aucun compte, aucun cloud, aucune synchronisation de vos informations. Les tirages
-  sont <strong>générés entièrement sur votre appareil</strong> : le jeu fonctionne
-  à 100 % hors connexion. Le seul service tiers qui intervient est Google Play, et
-  uniquement si vous choisissez de faire l'achat unique décrit plus bas.
+  Aucune publicité ne s'affiche en jouant : ni bannière, ni encart entre deux
+  parties, ni écran en fin de partie. La seule publicité de l'application est une
+  <strong>vidéo que vous demandez vous-même</strong> en appuyant sur « Indice », puis
+  en confirmant. Si vous ne demandez pas d'indice, aucune publicité n'est chargée.
+</p>
+<p>
+  Ces vidéos sont fournies par <strong>Google AdMob</strong>. Pour les diffuser et
+  compter les vues, AdMob reçoit votre <strong>identifiant publicitaire Android</strong>,
+  votre <strong>adresse IP</strong> (d'où une localisation approximative, à l'échelle
+  de la ville ou de la région), vos <strong>interactions avec la vidéo</strong> et des
+  <strong>informations techniques</strong> sur l'appareil. Ces données servent à
+  afficher la publicité, à mesurer son affichage et à détecter la fraude.
+  Détails : <a href="https://business.safety.google/privacy/">Règles de confidentialité de Google</a>.
+</p>
+<p>
+  Dans l'Espace économique européen, au Royaume-Uni et en Suisse, un
+  <strong>formulaire de consentement</strong> de Google s'affiche avant la première
+  vidéo. Vous pouvez revenir sur votre choix à tout moment dans
+  <em>Réglages → Confidentialité des publicités</em>. Vous pouvez aussi remettre à zéro
+  ou supprimer votre identifiant publicitaire dans les réglages Android
+  (<em>Paramètres → Google → Annonces</em>).
 </p>
 
-<h2>Aucun compte requis</h2>
+<h2>Le classement du tirage du jour</h2>
 <p>
-  Vous n'avez pas besoin de créer un compte pour utiliser Le Compte y est. Nous ne
-  demandons aucun email, ni nom, ni numéro de téléphone, ni aucune autre information
-  d'identification.
+  Le tirage du jour est le même pour tout le monde. À votre première tentative de la
+  journée, l'application envoie votre résultat pour que l'écran de fin puisse vous
+  situer parmi les autres joueurs (« Mieux que X % des joueurs »).
 </p>
-
-<h2>Aucune publicité, aucun tracking</h2>
 <p>
-  L'application ne contient aucune publicité, aucun SDK de tracking publicitaire,
-  aucun identifiant publicitaire, aucun analytics (Google Analytics, Firebase
-  Analytics, Mixpanel, etc.), ni aucun outil de mesure du comportement utilisateur.
+  Ce qui part : <strong>l'écart à la cible, les points, le temps de la partie</strong>,
+  la date du tirage, et un <strong>identifiant d'installation aléatoire</strong> (32
+  caractères tirés au hasard à la première ouverture). Cet identifiant n'a aucun lien
+  avec vous, avec votre compte Google ni avec votre téléphone, et il change si vous
+  réinstallez l'application. Aucun pseudo, aucun email, aucune adresse.
+</p>
+<p>
+  Ces résultats sont stockés dans <strong>notre propre base Google Firestore</strong>
+  (projet <code>compte-y-est</code>, serveurs situés dans l'Union européenne), qui agit
+  comme hébergeur pour notre compte. Ils ne sont revendus à personne. L'application ne
+  télécharge jamais le résultat d'un autre joueur : elle ne récupère que des
+  <strong>comptages</strong> (nombre de joueurs, nombre de comptes exacts, nombre de
+  résultats moins bons que le vôtre). Sans connexion, le tirage du jour reste jouable
+  et votre série est conservée : seul le classement disparaît.
+</p>
+<p>
+  Aucune mesure d'audience, aucun analytics : Google Analytics est désactivé sur ce
+  projet, et l'application n'embarque aucun SDK de suivi comportemental.
 </p>
 
 <h2>Achat unique via Google Play</h2>
@@ -71,9 +106,11 @@
 <p>
   L'application ne demande aucune permission Android sensible : ni localisation,
   ni contacts, ni photos, ni microphone, ni appareil photo, ni stockage partagé.
-  La seule permission incluse est celle de la facturation Google Play
-  (<strong>com.android.vending.BILLING</strong>), nécessaire à l'achat unique
-  décrit ci-dessus.
+  Les seules permissions incluses sont celle de la facturation Google Play
+  (<strong>com.android.vending.BILLING</strong>), nécessaire à l'achat unique décrit
+  ci-dessus, l'accès à <strong>Internet</strong> (vidéo d'indice et classement du jour)
+  et l'identifiant publicitaire
+  (<strong>com.google.android.gms.permission.AD_ID</strong>), ajouté par le kit AdMob.
 </p>
 
 <h2>Stockage local des données</h2>
@@ -94,7 +131,9 @@
   lorsque la version complète a été débloquée.</li>
 </ul>
 <p>
-  Ces données ne quittent jamais votre appareil.
+  Ces données ne quittent jamais votre appareil. Seules les valeurs décrites plus haut
+  (résultat du tirage du jour et identifiant d'installation aléatoire) sont envoyées,
+  et uniquement pour le classement.
 </p>
 
 <h2>Suppression de vos données</h2>
@@ -106,20 +145,28 @@
   lui, reste attaché à votre compte Google Play et peut être restauré après une
   réinstallation.
 </p>
+<p>
+  Le résultat envoyé pour le classement du jour ne peut pas être retiré à la demande :
+  il n'est rattaché à aucune personne, donc nous ne pouvons pas savoir lequel est le
+  vôtre. Réinstaller l'application crée un nouvel identifiant d'installation, sans
+  aucun lien avec l'ancien.
+</p>
 
 <h2>Les enfants</h2>
 <p>
   Le Compte y est s'adresse à un public adulte et ne vise pas spécifiquement les
-  enfants. Le jeu ne comporte aucune communication entre joueurs, aucune publicité,
-  et ne demande aucune donnée personnelle, quel que soit l'âge de la personne qui
-  joue.
+  enfants. Le jeu ne comporte aucune communication entre joueurs et ne demande aucune
+  donnée personnelle, quel que soit l'âge de la personne qui joue. La seule publicité
+  possible est la vidéo d'indice, que le joueur déclenche lui-même.
 </p>
 
 <h2>Vos droits</h2>
 <p>
-  Nous ne détenons aucune donnée vous concernant : il n'y a rien à consulter,
-  corriger ou supprimer de notre côté. Les seules données existantes sont celles
-  qui restent sur votre appareil, et vous en disposez librement. Pour les données
+  Nous ne détenons aucune donnée permettant de vous identifier : les résultats du
+  classement sont anonymes et ne peuvent être rattachés à une personne, donc il n'y a
+  rien à consulter ni à corriger de notre côté. Les données de jeu restent sur votre
+  appareil et vous en disposez librement. Pour la publicité, écrivez-nous ou changez
+  votre choix dans <em>Réglages → Confidentialité des publicités</em> ; pour les données
   liées au paiement, adressez-vous à Google Play, seul acteur à les traiter.
 </p>
 
