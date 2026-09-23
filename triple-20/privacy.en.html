@@ -21,46 +21,146 @@
 <body>
 
 <h1>Triple <span>20</span> — Privacy Policy</h1>
-<p class="meta">Last updated: 24 August 2026 · Version 1.0 · <code>com.hfc.flechette</code></p>
+<p class="meta">Last updated: September 23, 2026 · Version 1.1 · <code>com.hfc.flechette</code></p>
 
-<h2>No data is collected</h2>
-<p>Triple 20 collects no personal data. The app asks for no account, no sign-up, no email
-address and no phone number. It does not identify you.</p>
+<p>This policy applies to the Android app <strong>Triple 20</strong> ("Triple 20 – Darts
+Scoreboard" on Google Play, <code>com.hfc.flechette</code>), published on Google Play by
+<strong>PIXELMORE</strong> (Hugo Ferreira).</p>
 
-<h2>No data leaves your device</h2>
+<h2>No account, no data collected by us</h2>
+<p>PIXELMORE collects no personal data through Triple 20. The app asks for no account, no
+sign-up, no email address and no phone number. It does not identify you, and we receive
+nothing from your device. Only one third party is involved: Google, for the ads described
+below.</p>
+
+<h2>Your game data stays with you</h2>
 <p>The player names you save, your games, your statistics and your settings are stored only in
-your phone's private storage. Nothing is sent over the internet, to us or to anyone else. The
-app has no server.</p>
+your phone's private storage. They are sent neither to us, nor to Google's ad network, nor to
+any server of the app, which has none. The one exception is up to you: if Android backup is
+turned on on your phone, Android includes them, as it does for any app's data, in your Google
+account backup, which we have no access to.</p>
 
-<h2>No network access</h2>
-<p>Triple 20 works entirely offline and does not request internet permission. You can check it
-yourself: the app behaves identically in flight mode.</p>
+<h2>Network access: for ads only</h2>
+<p>Triple 20 works entirely offline. Since version 1.1.0, it connects to the internet for
+advertising, and for nothing else: at each launch, to ask Google whether consent is required
+and then start the ad service; at the start of a game, to prepare the ad shown when it ends.
+Without a connection, in airplane mode for example, no ad is shown and the app behaves exactly
+the same.</p>
 
-<h2>No ads, no trackers, no analytics</h2>
-<p>There is no ad network, no analytics tool, no advertising identifier, no cookie and no
-third-party tracking library.</p>
+<h2>Advertising (Google AdMob)</h2>
+<p>Triple 20 shows <strong>one full-screen ad (interstitial)</strong> at a single moment: when
+you <strong>leave the results screen</strong> of a finished game ("Rematch", "Back to home", or the back
+button or gesture).
+<strong>Never during a game</strong>, never when the app opens or closes, and <strong>at most
+one every three minutes</strong>. The ad service starts when the app launches, after the
+consent form where one is required; the ad is requested at the start of the game so that it is
+ready at the end. If it is not ready, nothing is shown and you carry on without waiting. Ads
+are limited to the "everyone" content rating.</p>
+<p>These ads are served by <strong>Google AdMob</strong> (Google Mobile Ads SDK). To show and
+measure them and to prevent fraud, Google processes: the Android <strong>advertising
+ID</strong> and other device identifiers, your IP address (and therefore an
+<strong>approximate location</strong>), device information (model, Android version, language),
+your <strong>interactions with the ads</strong> (ad shown, tapped, closed) and
+<strong>diagnostic information</strong> (launch time, hang rate and energy use of the ad module). This data
+may be processed on Google servers located outside the European Union. Google then acts as an
+independent controller, under its own rules:
+<a href="https://policies.google.com/technologies/partner-sites">how Google uses information
+from partner apps</a> and <a href="https://policies.google.com/privacy">Google Privacy
+Policy</a>. We receive none of this data: AdMob only shows us totals (number of ads shown,
+revenue).</p>
+
+<h2>Your consent</h2>
+<p>In the European Economic Area, the United Kingdom and Switzerland, <strong>Google's consent
+form</strong> is shown when the app launches, <strong>before any ad is requested</strong>.
+You can accept, <strong>refuse</strong> ("Do not consent") or choose purpose by purpose
+("Manage options").</p>
+<ul>
+  <li><strong>If you accept</strong>, Google may use the advertising ID and store information
+  on your device to personalise and measure ads.</li>
+  <li><strong>If you refuse</strong>, the app works exactly the same; Google then only serves
+  non-personalised or limited ads, chosen without your profile.</li>
+</ul>
+<p><strong>You can change your mind at any time</strong>, as easily as you gave your answer:
+<strong>Settings → "Ad privacy"</strong> reopens the same form. Your new answer applies at
+once: the ad already prepared is discarded, and the next one is only requested under your new
+choices. This entry appears where the regulations require it. Everywhere, you can also reset or
+delete your advertising ID in Android settings (Privacy → Ads; the exact wording varies by
+phone).</p>
+
+<h2>No other trackers, no analytics</h2>
+<p>Apart from the advertising described above, there is no analytics tool (no Google
+Analytics, no Firebase), no crash reporting and no other third-party tracking library. No data
+is sold, rented or passed on to data brokers.</p>
 
 <h2>Android permissions</h2>
-<p>The app uses no sensitive permission. It keeps the screen awake during a game if you turn
-that on in the settings, and uses the system text-to-speech engine to call the scores if you
-turn that on too. Both stay on the device.</p>
+<p>The app uses no sensitive permission: no camera, no microphone, no location, no contacts,
+no storage, no notifications. The permissions it declares all serve advertising, apart from
+one internal permission:</p>
+<ul>
+  <li><strong>Internet</strong> (<code>INTERNET</code>) and <strong>network state</strong>
+  (<code>ACCESS_NETWORK_STATE</code>) — loading and showing ads. No game data goes through
+  this connection.</li>
+  <li><strong>Advertising ID and Android advertising services</strong>
+  (<code>com.google.android.gms.permission.AD_ID</code>, <code>ACCESS_ADSERVICES_AD_ID</code>,
+  <code>ACCESS_ADSERVICES_ATTRIBUTION</code>, <code>ACCESS_ADSERVICES_TOPICS</code>) — added by
+  the Google Mobile Ads SDK, within the limits of your consent.</li>
+  <li><strong>Background tasks</strong> (<code>WAKE_LOCK</code>, <code>FOREGROUND_SERVICE</code>)
+  — added by the Android WorkManager library, which the ad SDK uses.</li>
+  <li><strong>Internal permission</strong>
+  (<code>com.hfc.flechette.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>) — declared
+  automatically by the Android AndroidX library and specific to the app: it keeps the app's
+  internal messages private and grants access to nothing on your phone.</li>
+</ul>
+<p>The app keeps the screen awake during a game if you turn that on in the settings, and uses
+the system text-to-speech engine to call the scores if you turn that on too. Both stay on the
+device.</p>
 
 <h2>Deleting your data</h2>
 <p>The settings offer "Reset statistics", which clears the history and the averages.
-Uninstalling the app permanently removes all data, since no copy exists anywhere else.</p>
+Uninstalling the app, or using Android Settings → Apps → Triple 20 → Storage → Clear data,
+permanently removes the game data from the phone. If Android backup is turned on, a copy may
+remain in your Google account backup and come back when you reinstall; you manage it in your
+phone's backup settings. The data Google
+processes for advertising is not in our hands: reset or delete your advertising ID in Android
+settings, and address your requests to Google.</p>
+
+<h2>Your rights</h2>
+<p>We hold no data that could identify you: your game data stays with you, and the
+advertising data is held by Google, tied to an advertising ID, never to your name. Under the
+GDPR, you have the right of access, rectification, erasure and objection. Where the law
+requires it (European Economic Area, United Kingdom, Switzerland), advertising rests on your
+<strong>consent</strong>, which you can withdraw at any time from Settings → "Ad privacy".
+Requests about the data Google processes for advertising should be addressed to Google; for
+any other question, write to us at the address below. You may also lodge a complaint with the
+French data protection authority (<a href="https://www.cnil.fr/en/home">CNIL</a>) or with the
+one in your country.</p>
 
 <h2>Children</h2>
-<p>As the app collects no data at all, it collects none about children.</p>
+<p>Triple 20 <strong>is not directed at children under 13</strong>: its declared audience on
+Google Play starts at 13. The content itself is rated for everyone (PEGI 3), and ads are
+limited to the "everyone" content rating. The app has no account, no in-app purchase and no
+exchange between players.</p>
+<p>We collect no data at all, and therefore none from a child; only advertising goes through
+Google, under its own rules. If you are a parent or legal guardian and have a question, write
+to us at the address below.</p>
 
 <h2>Changes</h2>
-<p>Any change to this policy will be published on this page, with a new update date.</p>
+<p>Any change to this policy will be published on this page, with a new update date. This
+version 1.1 of September 23, 2026 replaces version 1.0 of August 24, 2026, which described an
+app with no ads and no network access: that description became inaccurate with the Google
+AdMob ads and the consent form introduced in version 1.1.0 of the app. Game data, for its
+part, stays with you as before; this version only makes clear that Android backup, if you have
+turned it on, may keep a copy of it in your Google account. Version 1.0.0 of the app contains no ads and does not
+access the internet.</p>
 
 <h2>Contact</h2>
-<p>Questions: <a href="mailto:hugoferreirapro803@gmail.com">hugoferreirapro803@gmail.com</a></p>
+<p>Publisher: PIXELMORE (Hugo Ferreira), for the app "Triple 20"
+(<code>com.hfc.flechette</code>). Questions about this policy:
+<a href="mailto:hugoferreirapro803@gmail.com">hugoferreirapro803@gmail.com</a></p>
 
 <hr>
-<p class="footer">Triple 20 is an offline darts scorer. What you throw is nobody's business
-but yours.</p>
+<p class="footer">Triple 20 is an offline darts scorer, published by PIXELMORE. What you throw
+is nobody's business but yours.</p>
 
 </body>
 </html>
