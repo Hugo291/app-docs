@@ -31,6 +31,7 @@ Politiques de confidentialité et documents légaux pour mes applications Androi
 | Yam's | [Confidentialité](https://hugo291.github.io/app-docs/yams/privacy.html) | [Privacy](https://hugo291.github.io/app-docs/yams/privacy.en.html) | |
 | Embouteillage | [Confidentialité](https://hugo291.github.io/app-docs/embouteillage/privacy.html) | [Privacy](https://hugo291.github.io/app-docs/embouteillage/privacy.en.html) | |
 | Le Détective Logique | [Confidentialité](https://hugo291.github.io/app-docs/detective-logique/privacy.html) | [Privacy](https://hugo291.github.io/app-docs/detective-logique/privacy.en.html) | |
+| Machine folle | [Confidentialité](https://hugo291.github.io/app-docs/machine-folle/privacy.html) | [Privacy](https://hugo291.github.io/app-docs/machine-folle/privacy.en.html) | |
 | Wordspot | [Confidentialité](https://hugo291.github.io/app-docs/wordspot/privacy.html) | [Privacy](https://hugo291.github.io/app-docs/wordspot/privacy.en.html) | |
 
 L'index public (`index.html`) reste la source de vérité pour la liste affichée aux utilisateurs ; ce tableau la reflète pour la lecture sur GitHub.
