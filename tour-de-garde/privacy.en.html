@@ -21,7 +21,7 @@
 <body>
 
 <h1>Tour de <span>Garde</span> — Privacy Policy</h1>
-<p class="meta">Last updated: October 3, 2026 · Version 1.0 · <code>com.hfc.wave</code> · <a href="privacy.html">Français</a></p>
+<p class="meta">Last updated: October 4, 2026 · Version 1.1 · <code>com.hfc.wave</code> · <a href="privacy.html">Français</a></p>
 
 <p>This policy applies to the Android app <strong>Tour de Garde</strong> (<code>com.hfc.wave</code>), published on Google
 Play by <strong>PIXELMORE</strong> (Hugo Ferreira).</p>
@@ -39,24 +39,48 @@ space before starting over with a fresh game.</p>
 <p>One exception, which depends on you: if Android Backup is enabled on your phone, Android may include this data, like any
 app's data, in your Google account backup, which we cannot access.</p>
 
-<h2>Offline, no network connection</h2>
-<p>The game works fully offline. This version does not declare Android's Internet permission: it makes no network
-connection and neither sends nor receives any data.</p>
+<h2>Offline</h2>
+<p>The game works fully offline: playing, your progress and your save never go through the Internet. Only the optional
+purchase described below goes through Google Play, and so through the network.</p>
 
-<h2>No ads, no purchases, no trackers</h2>
-<p>This version contains no advertising, no in-app purchase, no advertising ID, no audience-measurement tool (no Google
-Analytics, no Firebase), no crash reporting and no third-party tracking library. No data is sold, rented or passed to data
+<h2>One optional purchase, through Google Play</h2>
+<p>The whole campaign can be played without paying anything. The <strong>Premium</strong> in-app purchase (a one-time
+purchase, no subscription) unlocks ×5 speed during the assault; it is only offered when you tap the ×5 button or the
+Premium row in Settings.</p>
+<ul>
+  <li><strong>Payment is handled entirely by Google Play</strong>, under the
+  <a href="https://play.google.com/about/play-terms/">Google Play Terms of Service</a> and the
+  <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Your payment details are entered in Google
+  Play: neither the app nor PIXELMORE can access them.</li>
+  <li>To unlock Premium, the app receives from Google Play, on your phone, the confirmation of the purchase (product ID,
+  purchase state and purchase token), sends it back to Google Play to acknowledge it, then records “Premium bought” in the
+  local save. It sends nothing to PIXELMORE: there is still no game server.</li>
+  <li>“Restore my purchases”, as well as a silent check when the game starts, asks Google Play for the purchases linked to
+  your Google account, to bring Premium back after a reinstall or on another phone.</li>
+  <li>As with any sale on Google Play, Google provides PIXELMORE, in the Play Console, with the order information needed
+  to manage sales (for example the order number, product, date, price and country). PIXELMORE uses it only for
+  accounting, refunds and support.</li>
+</ul>
+
+<h2>No ads, no trackers</h2>
+<p>This version contains no advertising, no advertising ID, no audience-measurement tool (no Google Analytics, no
+Firebase), no crash reporting and no third-party tracking library. No data is sold, rented or passed to data
 brokers.</p>
 <p>Distribution through Google Play: for users who have turned on usage and diagnostics sharing on their phone, Google may
 provide PIXELMORE, in the Play Console, with aggregated statistics (installs, crashes). These statistics come from Google
 Play, not from the app.</p>
 
 <h2>Android permissions</h2>
-<p>The app uses no sensitive permission: no Internet, camera, microphone, location, contacts, storage or
-notifications.</p>
+<p>The app uses no sensitive permission: no camera, microphone, location, contacts, storage or notifications. It
+declares:</p>
 <ul>
-  <li><strong>Internal permission</strong> (<code>com.hfc.wave.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>) — the only
-  one the app declares, added by AndroidX; it keeps the app's internal messages private.</li>
+  <li><strong>Google Play billing</strong> (<code>com.android.vending.BILLING</code>) — for the optional Premium
+  purchase.</li>
+  <li><strong>Internet and network state access</strong> (<code>android.permission.INTERNET</code>,
+  <code>android.permission.ACCESS_NETWORK_STATE</code>) — added by Google Play's billing library for its exchanges with
+  Google; the game itself does not use them.</li>
+  <li><strong>Internal permission</strong> (<code>com.hfc.wave.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>) — added by
+  AndroidX; it keeps the app's internal messages private.</li>
 </ul>
 <p>The game's sounds are played from the app's own audio files. If you turn on the Vibration option (off by default), the
 game vibrates your phone through the system's haptic feedback; this stays local.</p>
@@ -64,10 +88,12 @@ game vibrates your phone through the system's haptic feedback; this stays local.
 <h2>Deleting your data</h2>
 <p>Uninstalling the app, or using Android Settings → Apps → Tour de Garde → Storage → Clear data, permanently deletes your
 progress from the phone. If Android Backup is enabled, a copy may remain in your Google account backup, managed in your
-phone's backup settings.</p>
+phone's backup settings. A Premium purchase stays linked to your Google Play account, which keeps it: “Restore
+purchases” finds it again.</p>
 
 <h2>Your rights</h2>
-<p>We hold no data that can identify you. Under the GDPR you have the right of access, rectification, erasure and
+<p>Apart from the order information Google Play sends for a Premium purchase, we hold no data that can identify you.
+Under the GDPR you have the right of access, rectification, erasure and
 objection; there is nothing to rectify or erase on our side, but you can write to us at the address below. You may also
 lodge a complaint with your national data protection authority.</p>
 
@@ -77,7 +103,7 @@ We collect no data, and therefore none from a child. If you are a parent or guar
 below.</p>
 
 <h2>Future versions</h2>
-<p>If a later version added optional in-app purchases or optional rewarded ads, this policy would be updated
+<p>If a later version added other optional in-app purchases or optional rewarded ads, this policy would be updated
 <strong>before</strong> that version is released, to describe precisely the services involved, the data processed and your
 choices (including consent). As long as this page does not say so, the game contains none.</p>
 

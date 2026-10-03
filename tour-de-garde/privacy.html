@@ -21,7 +21,7 @@
 <body>
 
 <h1>Tour de <span>Garde</span> — Politique de confidentialité</h1>
-<p class="meta">Dernière mise à jour : 3 octobre 2026 · Version 1.0 · <code>com.hfc.wave</code> · <a href="privacy.en.html">English</a></p>
+<p class="meta">Dernière mise à jour : 4 octobre 2026 · Version 1.1 · <code>com.hfc.wave</code> · <a href="privacy.en.html">English</a></p>
 
 <p>Cette politique s'applique à l'application Android <strong>Tour de Garde</strong> (<code>com.hfc.wave</code>), publiée
 sur Google Play par <strong>PIXELMORE</strong> (Hugo Ferreira).</p>
@@ -41,25 +41,49 @@ de repartir d'une partie neuve.</p>
 données, comme celles de toute application, dans la sauvegarde de votre compte Google, à laquelle nous n'avons pas
 accès.</p>
 
-<h2>Hors ligne, sans connexion réseau</h2>
-<p>Le jeu fonctionne entièrement hors ligne. Cette version ne déclare pas l'autorisation Internet d'Android : elle
-n'établit aucune connexion réseau et n'envoie ni ne reçoit aucune donnée.</p>
+<h2>Hors ligne</h2>
+<p>Le jeu fonctionne entièrement hors ligne : ni la partie, ni la progression, ni la sauvegarde ne passent par Internet.
+Seul l'achat facultatif décrit ci-dessous passe par Google Play, et donc par le réseau.</p>
 
-<h2>Aucune publicité, aucun achat, aucun traceur</h2>
-<p>Cette version ne contient aucune publicité, aucun achat intégré, aucun identifiant publicitaire, aucun outil de mesure
-d'audience (ni Google Analytics, ni Firebase), aucun rapport de plantage et aucune bibliothèque tierce de suivi. Aucune
-donnée n'est vendue, louée ni transmise à des courtiers en données.</p>
+<h2>Un seul achat, facultatif, par Google Play</h2>
+<p>Toute la campagne se joue sans rien payer. L'achat intégré <strong>Premium</strong> (achat unique, sans abonnement)
+débloque la vitesse ×5 pendant l'assaut ; il ne se propose que si vous touchez le bouton ×5 ou la ligne Premium des
+Réglages.</p>
+<ul>
+  <li><strong>Le paiement est entièrement traité par Google Play</strong>, selon les
+  <a href="https://play.google.com/about/play-terms/">conditions d'utilisation de Google Play</a> et les
+  <a href="https://policies.google.com/privacy">règles de confidentialité de Google</a>. Vos coordonnées de paiement sont
+  saisies dans Google Play : ni l'application, ni PIXELMORE n'y ont accès.</li>
+  <li>Pour débloquer Premium, l'application reçoit de Google Play, sur votre téléphone, la confirmation de l'achat
+  (identifiant du produit, état de l'achat et jeton d'achat), la transmet en retour à Google Play pour l'accuser, puis
+  enregistre « Premium acheté » dans la sauvegarde locale. Elle n'envoie rien à PIXELMORE : il n'existe toujours aucun
+  serveur du jeu.</li>
+  <li>« Restaurer mes achats », ainsi qu'une vérification silencieuse au lancement du jeu, demandent à Google Play les
+  achats liés à votre compte Google, pour retrouver Premium après une réinstallation ou sur un autre téléphone.</li>
+  <li>Comme pour toute vente sur Google Play, Google transmet à PIXELMORE, dans la Play Console, les informations de
+  commande nécessaires à la gestion des ventes (par exemple le numéro de commande, le produit, la date, le prix et le
+  pays). PIXELMORE ne les utilise que pour la comptabilité, les remboursements et le support.</li>
+</ul>
+
+<h2>Aucune publicité, aucun traceur</h2>
+<p>Cette version ne contient aucune publicité, aucun identifiant publicitaire, aucun outil de mesure d'audience (ni Google
+Analytics, ni Firebase), aucun rapport de plantage et aucune bibliothèque tierce de suivi. Aucune donnée n'est vendue,
+louée ni transmise à des courtiers en données.</p>
 <p>Distribution par Google Play : pour les utilisateurs qui ont activé le partage des données d'utilisation et de
 diagnostic sur leur téléphone, Google peut fournir à PIXELMORE, dans la Play Console, des statistiques agrégées
 (installations, plantages). Ces statistiques viennent de Google Play, pas de l'application.</p>
 
 <h2>Autorisations Android</h2>
-<p>L'application n'utilise aucune autorisation sensible : ni Internet, ni caméra, ni microphone, ni localisation, ni
-contacts, ni stockage, ni notifications.</p>
+<p>L'application n'utilise aucune autorisation sensible : ni caméra, ni microphone, ni localisation, ni contacts, ni
+stockage, ni notifications. Elle déclare :</p>
 <ul>
-  <li><strong>Autorisation interne</strong> (<code>com.hfc.wave.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>) — la seule
-  déclarée par l'application, ajoutée d'office par AndroidX ; elle garde les messages internes de l'application
-  privés.</li>
+  <li><strong>Facturation Google Play</strong> (<code>com.android.vending.BILLING</code>) — pour l'achat facultatif
+  Premium.</li>
+  <li><strong>Accès à Internet et à l'état du réseau</strong> (<code>android.permission.INTERNET</code>,
+  <code>android.permission.ACCESS_NETWORK_STATE</code>) — ajoutés par la bibliothèque de facturation de Google Play,
+  pour ses échanges avec Google ; le jeu lui-même ne s'en sert pas.</li>
+  <li><strong>Autorisation interne</strong> (<code>com.hfc.wave.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>) —
+  ajoutée d'office par AndroidX ; elle garde les messages internes de l'application privés.</li>
 </ul>
 <p>Les sons du jeu sont lus depuis les fichiers audio de l'application. Si vous activez l'option Vibrations (désactivée par
 défaut), le jeu fait vibrer le téléphone par le retour haptique du système ; cela reste local.</p>
@@ -68,10 +92,12 @@ défaut), le jeu fait vibrer le téléphone par le retour haptique du système ;
 <p>Désinstaller l'application, ou utiliser Paramètres Android → Applications → Tour de Garde → Stockage → Effacer les
 données, supprime définitivement votre progression du téléphone. Si la sauvegarde Android est activée, une copie peut
 subsister dans la sauvegarde de votre compte Google ; elle se gère dans les paramètres de sauvegarde de votre
-téléphone.</p>
+téléphone. Un achat Premium reste lié à votre compte Google Play, qui le conserve : « Restaurer mes achats » le
+retrouve.</p>
 
 <h2>Vos droits</h2>
-<p>Nous ne détenons aucune donnée permettant de vous identifier. Conformément au RGPD, vous disposez d'un droit d'accès, de
+<p>Hormis les informations de commande qu'envoie Google Play pour un achat Premium, nous ne détenons aucune donnée
+permettant de vous identifier. Conformément au RGPD, vous disposez d'un droit d'accès, de
 rectification, d'effacement et d'opposition ; il n'y a rien à rectifier ni à effacer de notre côté, mais vous pouvez nous
 écrire à l'adresse indiquée plus bas. Vous pouvez aussi introduire une réclamation auprès de la
 <a href="https://www.cnil.fr/fr/plaintes">CNIL</a> ou de l'autorité de protection des données de votre pays.</p>
@@ -82,10 +108,10 @@ commence à 13 ans. Nous ne collectons aucune donnée, et donc aucune auprès d'
 légal et avez une question, écrivez-nous à l'adresse indiquée plus bas.</p>
 
 <h2>Évolutions du jeu</h2>
-<p>Si une version ultérieure ajoutait des achats intégrés facultatifs ou des publicités récompensées facultatives, cette
-politique serait mise à jour <strong>avant</strong> la publication de cette version, pour décrire précisément les services
-concernés, les données traitées et vos choix (dont le consentement). Tant que cette page ne le dit pas, le jeu n'en
-contient aucun.</p>
+<p>Si une version ultérieure ajoutait d'autres achats intégrés facultatifs ou des publicités récompensées facultatives,
+cette politique serait mise à jour <strong>avant</strong> la publication de cette version, pour décrire précisément les
+services concernés, les données traitées et vos choix (dont le consentement). Tant que cette page ne le dit pas, le jeu
+n'en contient aucun.</p>
 
 <h2>Modifications</h2>
 <p>Toute évolution de cette politique sera publiée sur cette page, avec une nouvelle date de mise à jour.</p>
