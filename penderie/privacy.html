@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Penderie — Politique de confidentialité</title>
+<style>
+  :root { --ink: #111111; --paper: #EDEDE8; --mute: #5A5A55; --faint: #D6D6CF; --accent: #C23B17; }
+  * { box-sizing: border-box; }
+  body { background: var(--paper); color: var(--ink); font-family: -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; max-width: 720px; margin: 48px auto; padding: 0 24px 80px; line-height: 1.6; }
+  h1 { font-weight: 700; letter-spacing: -0.5px; margin-bottom: 4px; font-size: 32px; }
+  h1 span { color: var(--accent); }
+  .meta { color: var(--mute); font-size: 14px; margin-bottom: 40px; }
+  h2 { font-weight: 600; letter-spacing: -0.3px; margin: 36px 0 8px; font-size: 20px; }
+  p, li { font-size: 16px; }
+  a { color: var(--accent); }
+  hr { border: none; border-top: 1px solid var(--faint); margin: 48px 0; }
+  .footer { color: var(--mute); font-size: 13px; font-style: italic; }
+</style>
+</head>
+<body>
+
+<h1><span>Penderie</span> — Politique de confidentialité</h1>
+<p class="meta">Dernière mise à jour : 4 octobre 2026 · Version 1.0 · <code>com.hfc.penderie</code> · <a href="privacy.en.html">English</a></p>
+
+<p>Cette politique s'applique à l'application Android <strong>Penderie</strong> (<code>com.hfc.penderie</code>), publiée
+sur Google Play par <strong>PIXELMORE</strong> (Hugo Ferreira).</p>
+
+<h2>Aucun compte</h2>
+<p>Penderie ne demande ni compte, ni inscription, ni adresse e-mail, ni numéro de téléphone. Il n'existe aucun serveur
+Penderie : PIXELMORE ne reçoit aucune donnée de votre appareil.</p>
+
+<h2>Vos vêtements et vos photos restent sur votre téléphone</h2>
+<p>Quand vous ajoutez une pièce, vous choisissez une photo dans votre galerie par le sélecteur de photos d'Android :
+l'application n'a accès qu'à la photo choisie, pas au reste de votre galerie. Le détourage du vêtement (suppression du
+fond) est calculé <strong>sur le téléphone</strong>. La photo, le vêtement détouré, son nom, sa catégorie, son état
+(propre ou au lavage), la tenue portée du jour et vos réglages sont enregistrés uniquement dans la mémoire privée de
+l'application. Ils ne sont envoyés à personne.</p>
+<p>Seule exception, qui dépend de vous : si la sauvegarde Android est activée sur votre téléphone, Android peut inclure ces
+données, comme celles de toute application, dans la sauvegarde de votre compte Google, à laquelle nous n'avons pas
+accès.</p>
+
+<h2>Détourage par ML Kit (Google)</h2>
+<p>Le détourage utilise <strong>ML Kit</strong>, la bibliothèque d'apprentissage automatique de Google, qui s'exécute sur
+l'appareil : vos photos ne quittent pas votre téléphone. Le modèle de détourage est téléchargé et mis à jour par les
+services Google Play. Comme l'indique Google, ML Kit peut contacter les serveurs de Google pour recevoir ces mises à jour
+et envoyer des mesures techniques sur son fonctionnement (informations sur l'appareil et l'application, performances) ;
+ces mesures ne contiennent pas vos photos. Voir les
+<a href="https://developers.google.com/ml-kit/terms">conditions de ML Kit</a> et les
+<a href="https://policies.google.com/privacy">règles de confidentialité de Google</a>.</p>
+
+<h2>Météo : position approximative, facultative</h2>
+<p>Pour vous proposer une tenue adaptée au temps du jour, Penderie peut utiliser la <strong>position approximative</strong>
+de votre téléphone, si vous l'autorisez (à l'accueil ou dans les Réglages ; vous pouvez la couper à tout moment).</p>
+<ul>
+  <li>L'application ne demande que la position approximative (jamais la position précise), puis l'arrondit encore à deux
+  décimales (de l'ordre du kilomètre).</li>
+  <li>Ces coordonnées arrondies sont envoyées au service météo <strong>Open-Meteo</strong>
+  (<a href="https://open-meteo.com/en/terms">open-meteo.com</a>), au plus une fois par heure, pour obtenir les
+  prévisions du jour. Comme tout serveur web, Open-Meteo reçoit aussi l'adresse IP de la connexion. Aucun identifiant ne
+  l'accompagne, et la position n'est ni conservée par l'application, ni envoyée à PIXELMORE.</li>
+  <li>Sans autorisation, l'application fonctionne normalement, sans météo.</li>
+</ul>
+
+<h2>Rappel quotidien</h2>
+<p>Si vous l'activez dans les Réglages, Penderie affiche chaque jour, à l'heure choisie, une notification « Ta tenue du jour
+est prête ». Elle est programmée sur le téléphone, sans serveur.</p>
+
+<h2>Aucune publicité, aucun traceur</h2>
+<p>Cette version ne contient aucune publicité, aucun identifiant publicitaire, aucun outil de mesure d'audience (ni Google
+Analytics, ni Firebase), aucun rapport de plantage et aucune bibliothèque tierce de suivi. Aucune donnée n'est vendue,
+louée ni transmise à des courtiers en données.</p>
+<p>Distribution par Google Play : pour les utilisateurs qui ont activé le partage des données d'utilisation et de
+diagnostic sur leur téléphone, Google peut fournir à PIXELMORE, dans la Play Console, des statistiques agrégées
+(installations, plantages). Ces statistiques viennent de Google Play, pas de l'application.</p>
+
+<h2>Autorisations Android</h2>
+<ul>
+  <li><strong>Position approximative</strong> (<code>ACCESS_COARSE_LOCATION</code>) — météo du jour, uniquement si vous
+  l'autorisez.</li>
+  <li><strong>Accès à Internet</strong> (<code>INTERNET</code>) — interroger Open-Meteo ; téléchargement du modèle de
+  détourage par les services Google Play.</li>
+  <li><strong>Notifications</strong> (<code>POST_NOTIFICATIONS</code>) et <strong>démarrage du téléphone</strong>
+  (<code>RECEIVE_BOOT_COMPLETED</code>) — afficher le rappel quotidien, et le reprogrammer après un redémarrage.</li>
+</ul>
+<p>L'application n'utilise ni la caméra, ni le microphone, ni vos contacts, ni l'accès à toute votre galerie.</p>
+
+<h2>Suppression de vos données</h2>
+<p>Réglages → Données → « Tout supprimer » efface vos vêtements, vos photos et l'historique des tenues. Désinstaller
+l'application, ou Paramètres Android → Applications → Penderie → Stockage → Effacer les données, supprime aussi vos
+réglages. Si la sauvegarde Android est activée, une copie peut subsister dans la sauvegarde de votre compte Google ; elle
+se gère dans les paramètres de sauvegarde de votre téléphone.</p>
+
+<h2>Vos droits</h2>
+<p>Nous ne détenons aucune donnée permettant de vous identifier. Conformément au RGPD, vous disposez d'un droit d'accès,
+de rectification, d'effacement et d'opposition ; il n'y a rien à rectifier ni à effacer de notre côté, mais vous pouvez
+nous écrire à l'adresse indiquée plus bas. Vous pouvez aussi introduire une réclamation auprès de la
+<a href="https://www.cnil.fr/fr/plaintes">CNIL</a> ou de l'autorité de protection des données de votre pays.</p>
+
+<h2>Enfants</h2>
+<p>Penderie <strong>ne s'adresse pas aux enfants de moins de 13 ans</strong>. Nous ne collectons aucune donnée, et donc
+aucune auprès d'un enfant.</p>
+
+<h2>Évolutions de l'application</h2>
+<p>Si une version ultérieure ajoutait de la publicité, cette politique serait mise à jour <strong>avant</strong> la
+publication de cette version, pour décrire précisément les services concernés, les données traitées et vos choix (dont le
+consentement). Tant que cette page ne le dit pas, l'application n'en contient aucune.</p>
+
+<h2>Modifications</h2>
+<p>Toute évolution de cette politique sera publiée sur cette page, avec une nouvelle date de mise à jour.</p>
+
+<h2>Contact</h2>
+<p>Éditeur : PIXELMORE (Hugo Ferreira), pour l'application « Penderie » (<code>com.hfc.penderie</code>). Pour toute
+question concernant cette politique : <a href="mailto:hugoferreirapro803@gmail.com">hugoferreirapro803@gmail.com</a></p>
+
+<hr>
+<p class="footer">Penderie est une garde-robe sur téléphone qui propose une tenue du jour, publiée par PIXELMORE.</p>
+
+</body>
+</html>
