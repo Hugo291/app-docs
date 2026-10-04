@@ -20,102 +20,130 @@
 <body>
 
 <h1>Ponts — Privacy Policy</h1>
-<p class="meta">Last updated: August 27, 2026 · Version 1.0</p>
+<p class="meta">Last updated: October 4, 2026 · Version 2.0 (app 1.4.0 and later)</p>
 
-<h2>No data collection</h2>
 <p>
-  <strong>Ponts does not collect any personal data.</strong> The app is a puzzle game (the Japanese hashi bridge puzzle)
-  that requires no account and never identifies the user. Your settings and your
-  progress are stored exclusively on your device.
+  Ponts is a puzzle game (the Japanese hashi puzzle) played offline, with no account.
+  This page describes exactly what the app does with your data.
 </p>
 
-<h2>No personal data sent to our servers</h2>
+<h2>What the app does not do</h2>
 <p>
-  The app does not transmit any personal data to our servers or to third parties.
-  No account, no cloud, no synchronization of your information. The game works
-  <strong>100% offline</strong>. The only third-party service involved is Google
-  Play, and only if you choose to make the one-time purchase described below.
+  <strong>No account is required.</strong> We run no server: nothing you do in the game is
+  sent to us. The app does not access your contacts, location, photos, microphone or
+  camera. It contains <strong>no analytics</strong> (no Google Analytics, no Firebase, nothing
+  of the kind).
+</p>
+<p>
+  Two Google services are involved: <strong>advertising</strong> (Google AdMob) and
+  <strong>billing</strong> (Google Play). Both are described below.
 </p>
 
-<h2>No account required</h2>
+<h2>Advertising</h2>
 <p>
-  You do not need to create an account to use Ponts. We do not ask for an email,
-  name, phone number, or any other identifying information.
+  The free pack (Discovery) shows a <strong>full-screen ad every 4 solved grids</strong>,
+  when you leave the "Grid solved" screen. Never during a game, never at launch, no banners.
+  <strong>The "All 150 puzzles" purchase removes ads permanently</strong>.
+</p>
+<p>
+  These ads are served by <strong>Google AdMob</strong>. To select and measure them and to
+  fight fraud, AdMob collects your device's <strong>advertising ID</strong>, your
+  <strong>IP address</strong> (from which it infers an approximate location), your
+  <strong>interactions with ads</strong> (viewed, tapped, closed) and <strong>diagnostic
+  information</strong> (performance, ad module crashes). Google uses this data for its own
+  advertising services. We do not see it in detail: AdMob only shows us totals
+  (impressions, revenue).
+</p>
+<p>
+  You stay in control of the advertising ID: <strong>Android Settings → Security &amp;
+  privacy → Privacy → Ads</strong>, where you can reset or delete it. Once you purchase,
+  the app no longer contacts AdMob.
 </p>
 
-<h2>No advertising, no tracking</h2>
+<h2>Your consent (European Economic Area, United Kingdom, Switzerland)</h2>
 <p>
-  The app contains no advertising, no advertising tracking SDKs, no advertising
-  identifier, no analytics (Google Analytics, Firebase Analytics, Mixpanel, etc.),
-  and no user behavior measurement tools.
+  If you play from one of these regions, <strong>no ad is requested from AdMob until you
+  have answered</strong> Google's consent message, shown when the app opens. You can accept,
+  decline ("Do not consent"), or choose purpose by purpose ("Manage options"). Declining
+  does not stop you from playing: ads may then be non-personalised, or not shown.
+</p>
+<p>
+  If you accept, AdMob may use the advertising ID and store information on your device to
+  personalise and measure ads. You can change your mind at any time from the app's privacy
+  options, or by resetting your phone's advertising ID.
 </p>
 
-<h2>One-time purchase via Google Play</h2>
+<h2>Purchases through Google Play</h2>
 <p>
-  The app offers a <strong>one-time purchase</strong> (no subscription) to unlock
-  the full version. This purchase is handled entirely by <strong>Google Play</strong>
-  (Google Play Billing): we never see, receive or store <strong>any payment
-  data</strong> — no card number, no identity, no billing address. The only effect
-  inside the app is a "purchased" flag stored locally on your device, which also
-  lets you restore your purchase after a reinstall. Google's processing of the
-  payment is governed by
+  The app offers, with no subscription:
+</p>
+<ul>
+  <li><strong>A one-time purchase "All 150 puzzles"</strong>: unlocks the Classic and Vast packs and removes ads.</li>
+  <li><strong>Hint packs</strong> (consumable purchases): add hints to your balance. Three hints a day are free, no purchase needed.</li>
+</ul>
+<p>
+  These purchases are handled entirely by <strong>Google Play</strong> (Google Play Billing):
+  we never see, receive or store <strong>any payment data</strong> — no card number, no
+  identity, no billing address. The price shown is the one Google Play gives you. The app
+  only keeps a "purchased" marker and your hint balance, stored locally. "Restore my
+  purchases" (and a quiet check at startup) recovers the one-time purchase after a
+  reinstall. The hint balance is not backed up outside the device. Google's handling of
+  payments is governed by
   <a href="https://policies.google.com/privacy">Google's privacy policy</a>.
 </p>
 
-<h2>No sensitive permissions requested</h2>
+<h2>Android permissions</h2>
 <p>
-  The app requests no sensitive Android permission: no location, no contacts, no
-  photos, no microphone, no camera, no shared storage. The only permission included
-  is Google Play billing (<strong>com.android.vending.BILLING</strong>), required
-  for the one-time purchase described above.
+  No sensitive permission. The app uses Internet access (needed for ads) and the Google Play
+  billing permission (<strong>com.android.vending.BILLING</strong>), plus the technical
+  permissions of Google's ad module (network state, advertising ID). The game itself runs
+  without a connection.
 </p>
 
 <h2>Local data storage</h2>
 <p>
-  Your settings and your progress are stored locally by the app (built with Flutter)
-  using <strong>Hive</strong>, a local database kept in a private file that the
-  system reserves for the app and that no other app can access. Specifically, it
-  holds:
+  Your settings and progress are saved locally using <strong>Hive</strong>, a local database
+  kept in a private file reserved to the app by the system. It holds:
 </p>
 <ul>
-  <li><strong>Your settings</strong> — light/dark/system theme, island size, timer display, dimming of completed islands.</li>
-  <li><strong>Your progress</strong> — grids solved per pack, best times, the game in progress restored when you reopen the app.</li>
-  <li><strong>The purchase flag</strong> — a simple "purchased" marker once the Classic and Vast packs have been unlocked.</li>
+  <li><strong>Your settings</strong> — theme, island size, timer display, greying of finished islands.</li>
+  <li><strong>Your progress</strong> — solved grids per pack, daily grid, best times, game in progress.</li>
+  <li><strong>The hint economy</strong> — free hints used today, purchased balance, IDs of purchases already credited.</li>
+  <li><strong>The purchase marker</strong> and the count of grids solved since the last ad.</li>
 </ul>
 <p>
-  This data never leaves your device.
+  This data is sent nowhere. The daily grid is computed on your phone from the date: no download.
 </p>
 
 <h2>Deleting your data</h2>
 <p>
-  You remain in full control of your data. Uninstalling the app permanently deletes
-  everything it stored on your device. On Android you can also use
-  <strong>Settings → Apps → Ponts → Storage → Clear data</strong>. Your one-time
-  purchase stays attached to your Google Play account and can be restored after a
-  reinstall.
+  Uninstalling the app permanently deletes the data it stored on your device (progress and
+  hint balance included). On Android you can also use <strong>Settings → Apps → Ponts →
+  Storage → Clear data</strong>. Your purchases stay tied to your Google Play account. For
+  data processed by Google (advertising, payment), use your Google account tools:
+  <a href="https://myaccount.google.com/data-and-privacy">myaccount.google.com</a>.
 </p>
 
 <h2>Children</h2>
 <p>
-  Ponts is aimed at an adult audience and does not specifically target children.
-  The game has no player-to-player communication, no advertising, and asks for no
-  personal data, whatever the age of the person playing.
+  Ponts is aimed at an adult audience and does not specifically target children. The game has
+  no player-to-player communication and asks for no personal data. Ads are served by AdMob,
+  which must not be used to target children: if you are a parent and see an unsuitable ad,
+  please write to us.
 </p>
 
 <h2>Your rights</h2>
 <p>
-  We hold no data about you: there is nothing on our side to access, correct or
-  delete. The only data that exists is the data that stays on your device, and it
-  is yours to manage. For payment-related data, please contact Google Play, the
-  only party that processes it.
+  We hold no data about you: there is nothing for us to access, correct or delete. Data
+  processed by Google AdMob and Google Play is processed by Google, which is responsible for
+  it; you can exercise your rights (access, erasure, objection, withdrawal of consent) with
+  Google. Data kept on your device is yours to manage freely.
 </p>
 
 <h2>Changes to this policy</h2>
 <p>
-  This policy may be updated if the app changes significantly. If a future version
-  were to add anything that collects data, this page would be updated
-  <strong>before</strong> that version goes live. The last-updated date is shown at
-  the top of this page.
+  This policy is updated when the app changes, <strong>before</strong> the relevant version is
+  released. The last-updated date is shown at the top of this page.
 </p>
 
 <h2>Contact</h2>
@@ -127,7 +155,7 @@
 <hr>
 
 <p class="footer">
-  Ponts · com.hfc.ponts — an offline, understated hashi game built with respect for your attention and your privacy. No cloud. No account. No ads. No tracking.
+  Ponts · com.hfc.ponts — an understated hashi game built with respect for your attention. No account. No tracking beyond the advertising described here.
 </p>
 
 </body>
