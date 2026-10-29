@@ -20,7 +20,7 @@
 <body>
 
 <h1>Yam's — Politique de confidentialité</h1>
-<p class="meta">Dernière mise à jour : 3 septembre 2026 · Version 1.1</p>
+<p class="meta">Dernière mise à jour : 29 octobre 2026 · Version 2.0</p>
 
 <p>
   Cette politique de confidentialité s'applique à l'application Android
@@ -34,20 +34,22 @@
   <a href="mailto:hugoferreirapro803@gmail.com">hugoferreirapro803@gmail.com</a>
 </p>
 
-<h2>Aucune collecte de données</h2>
+<h2>Données collectées</h2>
 <p>
-  <strong>Yam's ne collecte aucune donnée personnelle.</strong> L'application
-  est un jeu de dés (le yams) qui ne demande aucun compte et n'identifie jamais l'utilisateur.
-  Vos réglages et votre progression sont stockés exclusivement sur votre appareil.
+  <strong>Yam's ne collecte aucune donnée personnelle pour son propre compte.</strong>
+  L'application est un jeu de dés (le yams) qui ne demande aucun compte et
+  n'identifie jamais l'utilisateur. Vos réglages et votre progression sont stockés
+  exclusivement sur votre appareil. Une seule exception : la publicité décrite plus
+  bas, dont les données sont collectées par Google, pas par nous.
 </p>
 
-<h2>Aucune donnée personnelle envoyée vers nos serveurs</h2>
+<h2>Aucune donnée envoyée vers nos serveurs</h2>
 <p>
-  L'application ne transmet aucune donnée personnelle à nos serveurs ni à des tiers.
-  Aucun compte, aucun cloud, aucune synchronisation de vos informations. Le jeu
-  fonctionne à <strong>100 % hors connexion</strong>. Le seul service tiers qui
-  intervient est Google Play, et uniquement si vous choisissez de faire l'achat
-  unique décrit plus bas.
+  Nous n'avons aucun serveur : aucun compte, aucun cloud, aucune synchronisation de
+  vos informations. Le jeu fonctionne <strong>hors connexion</strong> ; la connexion
+  ne sert qu'à deux services de Google : Google Play, si vous faites l'achat unique,
+  et Google AdMob, pour afficher les annonces décrites plus bas. Vos parties, noms de
+  joueurs et scores ne sont jamais transmis.
 </p>
 
 <h2>Aucun compte requis</h2>
@@ -57,11 +59,33 @@
   d'identification.
 </p>
 
-<h2>Aucune publicité, aucun tracking</h2>
+<h2>Publicité (Google AdMob)</h2>
 <p>
-  L'application ne contient aucune publicité, aucun SDK de tracking publicitaire,
-  aucun identifiant publicitaire, aucun analytics (Google Analytics, Firebase
-  Analytics, Mixpanel, etc.), ni aucun outil de mesure du comportement utilisateur.
+  La version gratuite affiche très peu de publicité : <strong>une annonce plein écran
+  à la sortie de l'écran de fin de partie</strong>, jamais pendant un tour. Aucune
+  annonce pendant les <strong>3 premiers jours</strong> d'utilisation, puis au plus
+  une annonce toutes les <strong>3 parties terminées</strong> et <strong>2 par
+  jour</strong>. L'<strong>achat unique retire toutes les annonces</strong> : une fois
+  acheté, l'application n'en charge plus aucune.
+</p>
+<p>
+  Les annonces sont servies par <strong>Google AdMob</strong> (SDK Google Mobile Ads).
+  Ce SDK collecte et partage avec Google, à des fins de <strong>publicité, d'analyse
+  et de prévention de la fraude</strong> : l'adresse IP (qui permet d'estimer une
+  position approximative), les interactions avec l'application (lancements, appuis,
+  vidéos vues), des informations de diagnostic (temps de lancement, plantages,
+  consommation) et des identifiants de l'appareil (<strong>identifiant publicitaire
+  Android</strong>, App Set ID). Ces données sont chiffrées en transit. Nous n'y avons
+  pas accès et n'utilisons aucun autre outil d'analyse ou de suivi (ni Firebase, ni
+  Google Analytics).
+</p>
+<p>
+  Là où la loi l'exige (Espace économique européen, Royaume-Uni…), un formulaire de
+  consentement de Google s'affiche avant toute annonce ; vous pouvez le rouvrir à tout
+  moment dans <strong>Réglages → Options de confidentialité des pubs</strong>. Vous
+  pouvez aussi réinitialiser ou supprimer l'identifiant publicitaire dans les
+  paramètres Android. Détails :
+  <a href="https://policies.google.com/technologies/ads">règles de Google sur la publicité</a>.
 </p>
 
 <h2>Achat unique via Google Play</h2>
@@ -77,12 +101,16 @@
   <a href="https://policies.google.com/privacy">politique de confidentialité de Google</a>.
 </p>
 
-<h2>Aucune permission sensible demandée</h2>
+<h2>Permissions</h2>
 <p>
-  L'application ne demande aucune permission Android sensible : ni localisation,
-  ni contacts, ni photos, ni microphone, ni appareil photo, ni stockage partagé.
-  Les seules permissions déclarées viennent du module de facturation Google Play : <code>com.android.vending.BILLING</code>, nécessaire à l'achat unique décrit ci-dessus, ainsi que <code>INTERNET</code> et <code>ACCESS_NETWORK_STATE</code>, que ce module ajoute automatiquement pour dialoguer avec le Play Store. Le jeu lui-même n'ouvre jamais de connexion : sans achat, l'application ne se sert d'aucune des trois.vending.BILLING</strong>), nécessaire à l'achat unique
-  décrit ci-dessus.
+  L'application ne demande aucune permission Android sensible : ni localisation, ni
+  contacts, ni photos, ni microphone, ni appareil photo, ni stockage partagé. Les
+  permissions déclarées sont ajoutées par les modules de Google :
+  <code>com.android.vending.BILLING</code> (achat unique), <code>INTERNET</code> et
+  <code>ACCESS_NETWORK_STATE</code> (dialogue avec Google Play et AdMob),
+  <code>com.google.android.gms.permission.AD_ID</code> et les permissions
+  <code>ACCESS_ADSERVICES_*</code> (identifiant publicitaire et services publicitaires
+  d'Android), ainsi que quelques permissions techniques du SDK publicitaire.
 </p>
 
 <h2>Stockage local des données</h2>
@@ -114,17 +142,19 @@
 
 <h2>Les enfants</h2>
 <p>
-  Yam's s'adresse à un public adulte et ne vise pas spécifiquement les enfants.
-  Le jeu ne comporte aucune communication entre joueurs, aucune publicité, et ne
-  demande aucune donnée personnelle, quel que soit l'âge de la personne qui joue.
+  Yam's s'adresse à un public adulte et ne vise pas spécifiquement les enfants. Le jeu
+  ne comporte aucune communication entre joueurs et ne demande aucune donnée personnelle,
+  quel que soit l'âge de la personne qui joue ; les annonces ne s'adressent pas aux enfants.
 </p>
 
 <h2>Vos droits</h2>
 <p>
-  Nous ne détenons aucune donnée vous concernant : il n'y a rien à consulter,
-  corriger ou supprimer de notre côté. Les seules données existantes sont celles
-  qui restent sur votre appareil, et vous en disposez librement. Pour les données
-  liées au paiement, adressez-vous à Google Play, seul acteur à les traiter.
+  Nous ne détenons aucune donnée vous concernant : il n'y a rien à consulter, corriger
+  ou supprimer de notre côté. Les seules données existantes sont celles qui restent sur
+  votre appareil, et vous en disposez librement. Pour les données liées au paiement ou à
+  la publicité, adressez-vous à Google (Google Play, Google AdMob), seul acteur à les
+  traiter : voir la <a href="https://policies.google.com/privacy">politique de
+  confidentialité de Google</a>.
 </p>
 
 <h2>Modifications de cette politique</h2>
@@ -145,8 +175,7 @@
 <hr>
 
 <p class="footer">
-  Yam's · com.hfc.yams — un yams hors ligne, avec une vraie feuille de score, conçu dans le respect de votre attention et de votre vie privée. Pas de cloud. Pas de compte. Pas de publicité.
-  Pas de tracking.
+  Yam's · com.hfc.yams — un yams hors ligne, avec une vraie feuille de score, conçu dans le respect de votre attention et de votre vie privée. Pas de cloud. Pas de compte. Très peu de publicité, retirée par l'achat unique.
 </p>
 
 </body>
