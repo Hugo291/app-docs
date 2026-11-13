@@ -21,7 +21,7 @@
 <body>
 
 <h1>Tour de <span>Garde</span> — Politique de confidentialité</h1>
-<p class="meta">Dernière mise à jour : 27 octobre 2026 · Version 2.0 (application 1.0.4 et suivantes) · <code>com.hfc.wave</code> · <a href="privacy.en.html">English</a></p>
+<p class="meta">Dernière mise à jour : 13 novembre 2026 · Version 2.1 (mini-sondage ; application 1.2 et suivantes) · <code>com.hfc.wave</code> · <a href="privacy.en.html">English</a></p>
 
 <p>Cette politique s'applique à l'application Android <strong>Tour de Garde</strong> (<code>com.hfc.wave</code>), publiée
 sur Google Play par <strong>PIXELMORE</strong> (Hugo Ferreira). Elle décrit exactement ce que l'application fait de vos
@@ -29,13 +29,14 @@ données.</p>
 
 <h2>Ce que l'application ne fait pas</h2>
 <p>Aucun compte propre au jeu n'est demandé : ni inscription, ni adresse e-mail, ni numéro de téléphone. Il n'existe aucun
-serveur du jeu : rien de ce que vous faites dans Tour de Garde n'est envoyé à PIXELMORE. L'application n'accède ni à vos
+serveur du jeu : rien de ce que vous faites dans Tour de Garde n'est envoyé à PIXELMORE, à une seule exception facultative, le mini-sondage décrit plus bas (une note et un mot, anonymes). L'application n'accède ni à vos
 contacts, ni à votre position, ni à vos photos, ni au microphone, ni à l'appareil photo, et ne contient aucun outil de
-mesure d'audience (ni Google Analytics, ni Firebase), aucun rapport de plantage et aucune bibliothèque de suivi. Aucune
+mesure d'audience (ni Google Analytics), aucun rapport de plantage et aucune bibliothèque de suivi ; Firebase ne sert qu'à recevoir les réponses du mini-sondage. Aucune
 donnée n'est vendue, louée ni transmise à des courtiers en données.</p>
-<p>Quatre services de Google interviennent en revanche, et chacun seulement à votre initiative : les <strong>achats</strong>
-(Google Play), la <strong>vidéo récompensée</strong> « Écus gratuits » (Google AdMob), <strong>Google Play Jeux</strong>
-et, si vous les ouvrez, la fiche Google Play du jeu (partage, note). Ils sont décrits ci-dessous.</p>
+<p>Cinq services de Google interviennent en revanche, et chacun seulement à votre initiative : les <strong>achats</strong>
+(Google Play), la <strong>vidéo récompensée</strong> « Écus gratuits » (Google AdMob), <strong>Google Play Jeux</strong>,
+le <strong>mini-sondage</strong> après un achat (Google Firebase) et, si vous les ouvrez, la fiche Google Play du jeu
+(partage, note). Ils sont décrits ci-dessous.</p>
 
 <h2>Votre progression reste sur votre appareil</h2>
 <p>Vos niveaux gagnés, vos étoiles, vos Écus, les améliorations de votre Forge, vos troupes et Frappes du ciel en
@@ -50,8 +51,8 @@ application, dans la sauvegarde de votre compte Google, à laquelle nous n'avons
 
 <h2>Hors ligne</h2>
 <p>Le jeu fonctionne entièrement hors ligne : la partie, la progression et la sauvegarde locale ne demandent pas Internet.
-Seuls les achats, la vidéo récompensée, Google Play Jeux, le partage d'une victoire et l'ouverture de la fiche Google Play
-passent par le réseau.</p>
+Seuls les achats, la vidéo récompensée, Google Play Jeux, le mini-sondage, le partage d'une victoire et l'ouverture de la
+fiche Google Play passent par le réseau.</p>
 
 <h2>Achats facultatifs, par Google Play</h2>
 <p>Toute la campagne se joue sans rien payer. L'application propose, sans abonnement :</p>
@@ -136,6 +137,26 @@ fiche du jeu dans Google Play, où la note se donne ; l'application ne voit ni l
 <p>Ces liens portent une étiquette de provenance (<code>utm_source</code>) qui indique seulement à Google Play qu'une visite
 vient d'un partage ou du jeu, sans vous identifier.</p>
 
+<h2>Mini-sondage après un achat, facultatif</h2>
+<p>Quelques jours après un achat (un pack, un château, Premium ou des Écus), l'éclaireur du jeu peut vous demander ce que
+vous en pensez : une note de 1 à 5 étoiles, puis, si vous le voulez, un mot de 200 caractères au plus. Vous pouvez fermer
+la fenêtre sans répondre. Un achat restauré (réinstallation, nouveau téléphone) n'est jamais sondé. Au plus deux demandes
+par achat. Le jeu n'offre aucune récompense en échange et ne renvoie vers aucune page de notation.</p>
+<ul>
+  <li><strong>Ce qui est envoyé</strong>, si vous répondez : la note, le mot (s'il y en a un), ce qui a été acheté (le pack,
+  « château », Premium ou Écus), s'il s'agit de la première ou de la deuxième demande, et l'heure d'envoi donnée par le
+  serveur. Rien d'autre.</li>
+  <li><strong>Anonyme</strong> : aucun compte, aucun nom, aucune adresse e-mail, aucun identifiant d'appareil ou de
+  publicité n'est joint. Chaque réponse porte un numéro tiré au hasard, qui ne dit rien de qui répond. Ne mettez pas de
+  donnée personnelle dans le mot.</li>
+  <li><strong>Où</strong> : dans une base <strong>Google Firebase (Cloud Firestore)</strong>, hébergée en Europe. Google
+  la fournit à PIXELMORE comme prestataire. Comme pour tout échange sur Internet, la connexion elle-même transmet à Google
+  l'adresse IP et des informations techniques, traitées par Google selon ses conditions. L'écriture se fait sans
+  possibilité de relire les réponses depuis l'application.</li>
+  <li><strong>À quoi ça sert</strong> : PIXELMORE lit les réponses pour améliorer le jeu et ses offres. Elles ne sont ni
+  vendues, ni partagées avec d'autres tiers.</li>
+</ul>
+
 <h2>Statistiques de Google Play</h2>
 <p>Pour les utilisateurs qui ont activé le partage des données d'utilisation et de diagnostic sur leur téléphone, Google
 peut fournir à PIXELMORE, dans la Play Console, des statistiques agrégées (installations, plantages). Ces statistiques
@@ -175,12 +196,16 @@ Jeux → Tour de Garde), ou depuis <a href="https://myaccount.google.com/">votre
 traitées par Google AdMob, utilisez les réglages de l'identifiant publicitaire décrits plus haut et
 <a href="https://myaccount.google.com/">votre compte Google</a>.</p>
 
+<p>Les réponses au mini-sondage ne portent aucun identifiant : PIXELMORE ne peut pas retrouver quelle réponse est la vôtre,
+et ne peut donc pas la supprimer individuellement. Si vous avez écrit un mot par erreur, écrivez-nous à l'adresse
+indiquée plus bas en citant son texte, et nous le supprimerons.</p>
+
 <h2>Vos droits</h2>
 <p>Hormis les informations de commande qu'envoie Google Play pour un achat, nous ne détenons aucune donnée permettant de
 vous identifier ; les données de Google Play Jeux et de Google AdMob sont détenues par Google, qui en est responsable et
 auprès de qui vous pouvez exercer vos droits (accès, effacement, opposition, retrait du consentement). Conformément au
-RGPD, vous disposez aussi envers nous d'un droit d'accès, de rectification, d'effacement et d'opposition ; il n'y a rien à
-rectifier ni à effacer de notre côté, mais vous pouvez nous écrire à l'adresse indiquée plus bas. Vous pouvez introduire
+RGPD, vous disposez aussi envers nous d'un droit d'accès, de rectification, d'effacement et d'opposition ; hormis les réponses anonymes au mini-sondage
+(voir plus haut), il n'y a rien à rectifier ni à effacer de notre côté, mais vous pouvez nous écrire à l'adresse indiquée plus bas. Vous pouvez introduire
 une réclamation auprès de la <a href="https://www.cnil.fr/fr/plaintes">CNIL</a> ou de l'autorité de protection des
 données de votre pays.</p>
 
