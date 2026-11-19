@@ -20,7 +20,7 @@
 <body>
 
 <h1>Ponts — Politique de confidentialité</h1>
-<p class="meta">Dernière mise à jour : 4 octobre 2026 · Version 2.0 (application 1.4.0 et suivantes)</p>
+<p class="meta">Dernière mise à jour : 19 novembre 2026 · Version 2.1 (application 2.1.0 et suivantes)</p>
 
 <p>
   Ponts est un jeu de réflexion (le puzzle japonais hashi) qui se joue hors ligne,
@@ -36,17 +36,31 @@
   Analytics, ni Firebase, ni aucun autre).
 </p>
 <p>
-  Deux services de Google interviennent en revanche : la <strong>publicité</strong>
-  (Google AdMob) et la <strong>facturation</strong> (Google Play). Ils sont décrits
-  ci-dessous.
+  Trois services de Google interviennent en revanche : la <strong>publicité</strong>
+  (Google AdMob), la <strong>facturation</strong> (Google Play) et, si vous le
+  souhaitez, les <strong>succès</strong> (Google Play Jeux, facultatif). Ils sont
+  décrits ci-dessous. Au lancement, l'application lit aussi un petit fichier public
+  qui indique si une période gratuite est en cours (voir « Période gratuite »).
 </p>
 
 <h2>La publicité</h2>
 <p>
-  Le pack gratuit (Découverte) affiche une <strong>publicité plein écran toutes les
-  4 grilles résolues</strong>, au moment où vous quittez l'écran « Grille résolue ».
-  Jamais pendant une partie, jamais au lancement, aucune bannière.
-  <strong>L'achat « Les 150 grilles » supprime définitivement les publicités</strong>.
+  L'application affiche au plus une <strong>publicité plein écran</strong> (interstitiel),
+  au moment où vous quittez l'écran « Grille résolue ». Jamais pendant une partie,
+  jamais au lancement, aucune bannière. Elle est volontairement rare :
+</p>
+<ul>
+  <li><strong>aucune publicité pendant les 3 premiers jours</strong>, comptés depuis
+  l'installation (ou depuis la première ouverture de la version 2.1 si vous aviez déjà
+  l'application) ; pendant ce délai, l'application interroge déjà AdMob (message de
+  consentement, préparation d'une publicité), mais n'en affiche aucune ;</li>
+  <li>ensuite, <strong>au plus une publicité toutes les 3 grilles résolues</strong>, et
+  <strong>2 par jour au maximum</strong>.</li>
+</ul>
+<p>
+  <strong>L'achat « L'archipel complet » supprime définitivement les publicités</strong>.
+  Elles sont aussi suspendues pendant une période où les 150 grilles sont offertes
+  (voir « Période gratuite »).
 </p>
 <p>
   Ces publicités sont fournies par <strong>Google AdMob</strong>. Pour les choisir, les
@@ -61,15 +75,17 @@
 <p>
   Vous gardez la main sur l'identifiant publicitaire : <strong>Paramètres Android →
   Sécurité et confidentialité → Confidentialité → Annonces</strong>, où vous pouvez le
-  réinitialiser ou le supprimer. Une fois l'achat effectué, l'application ne contacte
-  plus AdMob.
+  réinitialiser ou le supprimer. Une fois l'achat effectué, et pendant une période
+  gratuite, l'application ne contacte pas AdMob.
 </p>
 
 <h2>Votre consentement (Espace économique européen, Royaume-Uni, Suisse)</h2>
 <p>
   Si vous jouez depuis l'un de ces pays, <strong>aucune publicité n'est demandée à AdMob
   avant que vous ayez répondu</strong> au message de consentement de Google, affiché à
-  l'ouverture de l'application. Vous pouvez accepter, refuser (« Do not consent »), ou
+  l'ouverture de l'application (il n'est pas affiché après l'achat ni pendant une
+  période gratuite, puisque AdMob n'est alors pas contacté). Vous pouvez accepter,
+  refuser (« Do not consent »), ou
   choisir finalité par finalité (« Manage options »). Refuser n'empêche pas de jouer :
   les publicités peuvent alors être non personnalisées, ou ne pas s'afficher.
 </p>
@@ -80,12 +96,48 @@
   l'application, ou en réinitialisant l'identifiant publicitaire de votre téléphone.
 </p>
 
+<h2>Période gratuite</h2>
+<p>
+  De temps à autre, les 150 grilles peuvent être offertes à tous pour une durée limitée.
+  Pour le savoir, l'application lit au lancement un petit fichier public,
+  <strong>https://hugo291.github.io/app-docs/ponts/promo.json</strong>, hébergé par
+  <strong>GitHub Pages</strong>. Il indique seulement si une période gratuite est en
+  cours. <strong>Aucune donnée personnelle et aucun identifiant ne sont envoyés</strong> ;
+  comme pour toute page web, GitHub voit l'adresse IP de la requête. Sans connexion,
+  l'application garde la dernière réponse reçue.
+</p>
+<p>
+  Pendant une période gratuite, l'application ne contacte pas AdMob (voir « La
+  publicité »). Les grilles que vous résolvez ou commencez pendant la période restent
+  jouables ensuite.
+</p>
+
+<h2>Succès Google Play Jeux (facultatif)</h2>
+<p>
+  Ponts propose 15 succès Google Play Jeux. C'est <strong>facultatif</strong> : jouer ne
+  demande aucun compte. Un interrupteur des Réglages, <strong>actif par défaut</strong>,
+  commande cette fonction.
+</p>
+<ul>
+  <li><strong>Interrupteur actif</strong> : l'application vérifie au lancement, sans rien
+  afficher, si vous êtes connecté à Google Play Jeux ; vous pouvez vous connecter depuis
+  les Réglages. Si vous êtes connecté, <strong>Google Play Jeux reçoit votre identifiant
+  de joueur Play Jeux et les succès que vous débloquez</strong>. Ces données sont traitées
+  par Google selon sa propre
+  <a href="https://policies.google.com/privacy">politique de confidentialité</a>.
+  L'application ne reçoit de Google aucune autre donnée de votre compte.</li>
+  <li><strong>Interrupteur coupé</strong> : l'application n'envoie aucun succès à Google Play
+  Jeux et ne vous propose pas de connexion. Le module Google Play Jeux intégré au jeu
+  vérifie toutefois de lui-même, au lancement, si un profil Play Jeux est connecté sur
+  le téléphone (comportement de Google, que l'application ne peut pas désactiver).</li>
+</ul>
+
 <h2>Les achats via Google Play</h2>
 <p>
   L'application propose, sans abonnement :
 </p>
 <ul>
-  <li><strong>Un achat unique « Les 150 grilles »</strong> : débloque les packs Classique et Vaste et supprime les publicités.</li>
+  <li><strong>Un achat unique « L'archipel complet »</strong> : débloque les 150 grilles, supprime les publicités et porte les indices offerts à 5 par jour au lieu de 3.</li>
   <li><strong>Des packs d'indices</strong> (achats consommables) : ajoutent des indices à votre réserve. Trois indices par jour sont offerts, sans achat.</li>
 </ul>
 <p>
@@ -103,7 +155,7 @@
 <h2>Permissions Android</h2>
 <p>
   Aucune permission sensible. L'application utilise l'accès à Internet (nécessaire aux
-  publicités) et la permission de facturation Google Play
+  publicités, au fichier de période gratuite et aux succès Google Play Jeux) et la permission de facturation Google Play
   (<strong>com.android.vending.BILLING</strong>), ainsi que les permissions techniques
   du module publicitaire de Google (état du réseau, identifiant publicitaire).
   Le jeu lui-même fonctionne sans connexion.
@@ -116,13 +168,14 @@
   le système réserve à l'application. Y sont conservés :
 </p>
 <ul>
-  <li><strong>Vos réglages</strong> — thème, taille des îles, affichage du chronomètre, grisage des îles terminées.</li>
+  <li><strong>Vos réglages</strong> — thème, taille des îles, affichage du chronomètre, grisage des îles terminées, interrupteur des succès Google Play Jeux.</li>
   <li><strong>Votre progression</strong> — grilles résolues par pack, grille du jour, meilleurs temps, partie en cours.</li>
   <li><strong>L'économie d'indices</strong> — indices gratuits utilisés aujourd'hui, solde acheté, identifiants des achats déjà crédités.</li>
-  <li><strong>Le marqueur d'achat</strong> et le compteur de grilles résolues depuis la dernière publicité.</li>
+  <li><strong>Le marqueur d'achat</strong>, la date de première ouverture, le compteur de grilles résolues depuis la dernière publicité, le nombre de publicités du jour et la dernière réponse du fichier de période gratuite.</li>
 </ul>
 <p>
-  Ces données ne sont envoyées nulle part. La grille du jour est calculée sur votre
+  Ces données ne sont envoyées nulle part. (Les succès Google Play Jeux, si vous les
+  avez activés et êtes connecté, sont envoyés à Google comme décrit plus haut.) La grille du jour est calculée sur votre
   téléphone à partir de la date : aucun téléchargement.
 </p>
 
@@ -132,7 +185,8 @@
   votre appareil (progression et solde d'indices compris). Sur Android, vous pouvez
   aussi utiliser <strong>Paramètres → Applications → Ponts → Stockage → Effacer les
   données</strong>. Vos achats restent attachés à votre compte Google Play.
-  Pour les données traitées par Google (publicité, paiement), consultez les outils de
+  Les succès enregistrés par Google Play Jeux restent chez Google, qui en est
+  responsable. Pour les données traitées par Google (publicité, paiement, succès), consultez les outils de
   votre compte Google : <a href="https://myaccount.google.com/data-and-privacy">myaccount.google.com</a>.
 </p>
 
@@ -147,8 +201,9 @@
 <h2>Vos droits</h2>
 <p>
   Nous ne détenons aucune donnée vous concernant : il n'y a rien à consulter, corriger ou
-  supprimer de notre côté. Les données traitées par Google AdMob et Google Play le sont
-  par Google, qui en est responsable ; vous pouvez exercer vos droits (accès,
+  supprimer de notre côté. Les données traitées par Google AdMob, Google Play et Google Play Jeux le sont
+  par Google, qui en est responsable (l'adresse IP vue lors de la lecture du fichier de
+  période gratuite l'est par GitHub) ; vous pouvez exercer vos droits (accès,
   effacement, opposition, retrait du consentement) auprès de lui. Les données conservées
   sur votre appareil, vous en disposez librement.
 </p>
@@ -169,7 +224,7 @@
 <hr>
 
 <p class="footer">
-  Ponts · com.hfc.ponts — un hashi sobre, conçu dans le respect de votre attention. Pas de compte. Pas de pistage au-delà de la publicité décrite ici.
+  Ponts · com.hfc.ponts — un hashi sobre, conçu dans le respect de votre attention. Pas de compte. Pas de pistage au-delà de la publicité et des succès Google Play Jeux facultatifs décrits ici.
 </p>
 
 </body>
