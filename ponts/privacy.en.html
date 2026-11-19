@@ -20,7 +20,7 @@
 <body>
 
 <h1>Ponts — Privacy Policy</h1>
-<p class="meta">Last updated: October 4, 2026 · Version 2.0 (app 1.4.0 and later)</p>
+<p class="meta">Last updated: November 19, 2026 · Version 2.1 (app 2.1.0 and later)</p>
 
 <p>
   Ponts is a puzzle game (the Japanese hashi puzzle) played offline, with no account.
@@ -35,15 +35,28 @@
   of the kind).
 </p>
 <p>
-  Two Google services are involved: <strong>advertising</strong> (Google AdMob) and
-  <strong>billing</strong> (Google Play). Both are described below.
+  Three Google services are involved: <strong>advertising</strong> (Google AdMob),
+  <strong>billing</strong> (Google Play) and, if you wish, <strong>achievements</strong>
+  (Google Play Games, optional). They are described below. At launch, the app also reads
+  a small public file that says whether a free period is under way (see "Free period").
 </p>
 
 <h2>Advertising</h2>
 <p>
-  The free pack (Discovery) shows a <strong>full-screen ad every 4 solved grids</strong>,
-  when you leave the "Grid solved" screen. Never during a game, never at launch, no banners.
-  <strong>The "All 150 puzzles" purchase removes ads permanently</strong>.
+  The app shows at most one <strong>full-screen ad</strong> (interstitial), when you leave
+  the "Grid solved" screen. Never during a game, never at launch, no banners. Ads are
+  deliberately rare:
+</p>
+<ul>
+  <li><strong>no ads during the first 3 days</strong>, counted from installation (or from
+  the first launch of version 2.1 if you already had the app); during that time the app
+  already contacts AdMob (consent message, preparing an ad) but shows none;</li>
+  <li>after that, <strong>at most one ad every 3 solved grids</strong>, and
+  <strong>2 per day at most</strong>.</li>
+</ul>
+<p>
+  <strong>The "The full archipelago" purchase removes ads permanently</strong>. Ads are
+  also suspended during a period when all 150 grids are free (see "Free period").
 </p>
 <p>
   These ads are served by <strong>Google AdMob</strong>. To select and measure them and to
@@ -56,14 +69,15 @@
 </p>
 <p>
   You stay in control of the advertising ID: <strong>Android Settings → Security &amp;
-  privacy → Privacy → Ads</strong>, where you can reset or delete it. Once you purchase,
-  the app no longer contacts AdMob.
+  privacy → Privacy → Ads</strong>, where you can reset or delete it. Once you purchase, and during a
+  free period, the app does not contact AdMob.
 </p>
 
 <h2>Your consent (European Economic Area, United Kingdom, Switzerland)</h2>
 <p>
   If you play from one of these regions, <strong>no ad is requested from AdMob until you
-  have answered</strong> Google's consent message, shown when the app opens. You can accept,
+  have answered</strong> Google's consent message, shown when the app opens (it is not shown after the purchase or during a free
+  period, since AdMob is then not contacted). You can accept,
   decline ("Do not consent"), or choose purpose by purpose ("Manage options"). Declining
   does not stop you from playing: ads may then be non-personalised, or not shown.
 </p>
@@ -73,12 +87,46 @@
   options, or by resetting your phone's advertising ID.
 </p>
 
+<h2>Free period</h2>
+<p>
+  From time to time, all 150 grids may be offered to everyone for a limited time. To find
+  out, the app reads a small public file at launch,
+  <strong>https://hugo291.github.io/app-docs/ponts/promo.json</strong>, hosted by
+  <strong>GitHub Pages</strong>. It only says whether a free period is under way.
+  <strong>No personal data and no identifier is sent</strong>; as with any web page, GitHub
+  sees the IP address of the request. Without a connection, the app keeps the last
+  response received.
+</p>
+<p>
+  During a free period, the app does not contact AdMob (see "Advertising"). Grids you solve
+  or start during the period remain playable afterwards.
+</p>
+
+<h2>Google Play Games achievements (optional)</h2>
+<p>
+  Ponts offers 15 Google Play Games achievements. This is <strong>optional</strong>:
+  playing requires no account. A switch in Settings, <strong>on by default</strong>,
+  controls this feature.
+</p>
+<ul>
+  <li><strong>Switch on</strong>: at launch, the app checks, without displaying anything,
+  whether you are signed in to Google Play Games; you can sign in from Settings. If you are
+  signed in, <strong>Google Play Games receives your Play Games player ID and the
+  achievements you unlock</strong>. This data is processed by Google under its own
+  <a href="https://policies.google.com/privacy">privacy policy</a>. The app receives no
+  other data about your account from Google.</li>
+  <li><strong>Switch off</strong>: the app sends no achievements to Google Play Games and
+  does not offer to sign in. The Google Play Games module built into the game still checks
+  on its own, at launch, whether a Play Games profile is signed in on the phone (Google's
+  behaviour, which the app cannot turn off).</li>
+</ul>
+
 <h2>Purchases through Google Play</h2>
 <p>
   The app offers, with no subscription:
 </p>
 <ul>
-  <li><strong>A one-time purchase "All 150 puzzles"</strong>: unlocks the Classic and Vast packs and removes ads.</li>
+  <li><strong>A one-time purchase "The full archipelago"</strong>: unlocks all 150 grids, removes ads and raises the free hints to 5 a day instead of 3.</li>
   <li><strong>Hint packs</strong> (consumable purchases): add hints to your balance. Three hints a day are free, no purchase needed.</li>
 </ul>
 <p>
@@ -94,7 +142,7 @@
 
 <h2>Android permissions</h2>
 <p>
-  No sensitive permission. The app uses Internet access (needed for ads) and the Google Play
+  No sensitive permission. The app uses Internet access (needed for ads, the free-period file and Google Play Games achievements) and the Google Play
   billing permission (<strong>com.android.vending.BILLING</strong>), plus the technical
   permissions of Google's ad module (network state, advertising ID). The game itself runs
   without a connection.
@@ -106,21 +154,23 @@
   kept in a private file reserved to the app by the system. It holds:
 </p>
 <ul>
-  <li><strong>Your settings</strong> — theme, island size, timer display, greying of finished islands.</li>
+  <li><strong>Your settings</strong> — theme, island size, timer display, greying of finished islands, Google Play Games achievements switch.</li>
   <li><strong>Your progress</strong> — solved grids per pack, daily grid, best times, game in progress.</li>
   <li><strong>The hint economy</strong> — free hints used today, purchased balance, IDs of purchases already credited.</li>
-  <li><strong>The purchase marker</strong> and the count of grids solved since the last ad.</li>
+  <li><strong>The purchase marker</strong>, the first-launch date, the count of grids solved since the last ad, the number of ads shown today and the last response of the free-period file.</li>
 </ul>
 <p>
-  This data is sent nowhere. The daily grid is computed on your phone from the date: no download.
+  This data is sent nowhere. (Google Play Games achievements, if you have them enabled and
+  are signed in, are sent to Google as described above.) The daily grid is computed on your phone from the date: no download.
 </p>
 
 <h2>Deleting your data</h2>
 <p>
   Uninstalling the app permanently deletes the data it stored on your device (progress and
   hint balance included). On Android you can also use <strong>Settings → Apps → Ponts →
-  Storage → Clear data</strong>. Your purchases stay tied to your Google Play account. For
-  data processed by Google (advertising, payment), use your Google account tools:
+  Storage → Clear data</strong>. Your purchases stay tied to your Google Play account.
+  Achievements recorded by Google Play Games stay with Google, which is responsible for
+  them. For data processed by Google (advertising, payment, achievements), use your Google account tools:
   <a href="https://myaccount.google.com/data-and-privacy">myaccount.google.com</a>.
 </p>
 
@@ -135,8 +185,9 @@
 <h2>Your rights</h2>
 <p>
   We hold no data about you: there is nothing for us to access, correct or delete. Data
-  processed by Google AdMob and Google Play is processed by Google, which is responsible for
-  it; you can exercise your rights (access, erasure, objection, withdrawal of consent) with
+  processed by Google AdMob, Google Play and Google Play Games is processed by Google, which
+  is responsible for it (the IP address seen when the free-period file is read is seen by
+  GitHub); you can exercise your rights (access, erasure, objection, withdrawal of consent) with
   Google. Data kept on your device is yours to manage freely.
 </p>
 
@@ -155,7 +206,7 @@
 <hr>
 
 <p class="footer">
-  Ponts · com.hfc.ponts — an understated hashi game built with respect for your attention. No account. No tracking beyond the advertising described here.
+  Ponts · com.hfc.ponts — an understated hashi game built with respect for your attention. No account. No tracking beyond the advertising and the optional Google Play Games achievements described here.
 </p>
 
 </body>
